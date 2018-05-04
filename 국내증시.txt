@@ -1,0 +1,139 @@
+
+#include dataload.h
+#include fstream
+dataloaddataload(QObject parent) 
+	QThread(parent)
+{
+
+}
+
+void dataloadrun()
+{
+	stdlocaleglobal(stdlocale(kor));
+	auto fileStream = stdmake_sharedostream();
+	
+	pplxtaskvoid requestTask = fstreamopen_ostream(U(result.html)).then([=](ostream outFile)
+	{
+		fileStream = outFile;
+
+		http_client_config conf;
+		conf.set_timeout(seconds(5));
+
+		http_client client(U(httpfinance.naver.com));
+		uri_builder builder(U(sisesise_quant.nhn));
+		builder.append_query(U(sosok), (0));  코스피
+		builder.append_query(U(sosok), (1));  코스닥
+
+		return client.request(methodsGET, builder.to_string());
+	}).then([=](http_response response)
+	{
+		printf(Receive response status code%un, response.status_code());
+
+		return response.body().read_to_end(fileStream-streambuf());
+	}).then([=](size_t nVal)
+	{
+		printf(Size is %un, nVal);
+
+		return fileStream-close();
+	});
+
+	try
+	{
+		requestTask.wait();
+	}
+	catch (const stdexception &e)
+	{
+		printf(Error exception%sn, e.what());
+	}
+	int cnt = 1;
+	infoParser();
+	emit FinishThread(cnt);
+}
+
+void dataloadinfoParser()
+{
+	stdofstream ofs(result.txt);
+
+	stdstring line;
+	int cnt = 0;
+	int idx = 0, idx2 = 0;
+	stdlocaleglobal(stdlocale(kor));  encoding
+	stdifstream ifs(result.html);  한글을 읽기 위해 wifstream 사용
+	ifs.imbue(stdlocale(stdlocaleempty(), 
+		new stdcodecvt_utf8wchar_t, 0x10ffff, 
+		stdconsume_header));
+	int num_cnt = -1;
+
+	while (getline(ifs, line))
+	{
+		while (1)
+		{
+			
+			if (line.find(td class=no) != -1)  주식 정보 라인 시작
+			{
+				cnt++;  주식 개수 측정
+				getline(ifs, line);
+				if (line.find(class=tltle) != -1) 주식 정보 끝
+				{
+					int idx = line.find();
+					int idx2 = line.find(a);
+					ofs  cnt;
+					ofs  line.substr(idx, idx2) + n;
+				}
+
+			}
+		}
+
+		if (line.find(td class=no) != -1)
+		{
+			getline(ifs, line);
+			cnt++;
+			int idx = line.find_last_of() + 3;
+			int idx2 = line.find(, idx);
+			stdstring name = line.substr(idx, idx2-idx).c_str();
+			ofs  n+stdto_string(cnt) + .  + name + n;
+
+			while (getline(ifs,line))
+			{
+				if (num_cnt == 3)
+				{
+					num_cnt = -1; break;
+				}
+				if (line.find(td class=number) != -1)
+				{
+					num_cnt++;
+					if (num_cnt  0 && num_cnt  3)
+					{
+						for (int i = 0; i  2; i++)
+							getline(ifs, line);
+
+						idx = line.find_last_of(t);
+						idx2 = line.find_last_of( );
+						ofs  num_info[num_cnt]  line.substr(idx + 1, idx2 - idx)  n;
+						
+					}
+					else
+					{
+						idx = line.find();
+						idx2 = line.find_last_of() - 1;
+						ofs  num_info[num_cnt]  line.substr(idx + 1, idx2 - idx)  n;						
+					}
+						
+
+					
+
+				}
+				
+				
+				 
+			}
+			
+			ofs   line + Ln;
+		}
+		ofs  line+n;
+	}
+
+	ofs.close();
+	ifs.close();
+	
+}
