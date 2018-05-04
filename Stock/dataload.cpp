@@ -223,7 +223,7 @@ void dataload::KOSPI_KOSDAQ_Parser(std::string _filename)
 		{
 			idx = line.find(">") + 1;
 			idx2 = line.find_last_of("<");
-			info["현재가"] = line.substr(idx, idx2 - idx);
+			info["현재가"] = line.substr(idx, idx2 - idx); // O
 		}
 		if (line.find("change_value_and_rate") != -1)
 		{
@@ -240,11 +240,11 @@ void dataload::KOSPI_KOSDAQ_Parser(std::string _filename)
 			idx = line.find(">");
 			idx2 = line.find(">", idx + 5) + 1;
 			idx = line.find("<", idx2);
-			info["전일비"] = rate+line.substr(idx2, idx - idx2);
+			info["전일비"] = rate+line.substr(idx2, idx - idx2); //O
 
 			idx = line.find(">", idx) + 2;
 			idx2 = line.find("<", idx);
-			info["등락률"] = line.substr(idx, idx2 - idx);
+			info["등락률"] = line.substr(idx, idx2 - idx); // O
 
 		}
 		//if (line.find("<caption>") != -1)
@@ -262,7 +262,7 @@ void dataload::KOSPI_KOSDAQ_Parser(std::string _filename)
 					switch (info_idx)
 					{
 					case 1:
-						info["거래량"] = line.substr(idx, idx2 - idx);
+						info["거래량"] = line.substr(idx, idx2 - idx); // O
 						break;
 					case 2:
 						info["거래대금"] = line.substr(idx, idx2 - idx);

@@ -118,9 +118,12 @@
     </QtRcc>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="addwidget.cpp" />
     <ClCompile Include="dataload.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="mainwindow.cpp" />
     <ClCompile Include="Stock.cpp" />
+    <ClCompile Include="stockinfo.cpp" />
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="Stock.h" />
@@ -135,6 +138,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ui_mainwindow.h" />
+    <QtMoc Include="mainwindow.h" />
+    <ClInclude Include="stockinfo.h" />
+    <QtMoc Include="addwidget.h" />
     <ClInclude Include="dataload.h" />
     <ClInclude Include="GeneratedFiles\ui_Stock.h" />
   </ItemGroup>

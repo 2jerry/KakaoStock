@@ -28,6 +28,12 @@
       <Extensions>moc;h;cpp</Extensions>
       <SourceControlFiles>False</SourceControlFiles>
     </Filter>
+    <Filter Include="UI Header Files">
+      <UniqueIdentifier>{5554a8d4-a8c0-4f05-bcdb-a8ef1f7a93ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI Source Files">
+      <UniqueIdentifier>{f3f6c2aa-2598-4f56-a94c-8e422f676882}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -39,10 +45,25 @@
     <ClCompile Include="dataload.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="mainwindow.cpp">
+      <Filter>UI Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="addwidget.cpp">
+      <Filter>UI Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stockinfo.cpp">
+      <Filter>UI Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="Stock.h">
       <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="mainwindow.h">
+      <Filter>UI Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="addwidget.h">
+      <Filter>UI Header Files</Filter>
     </QtMoc>
   </ItemGroup>
   <ItemGroup>
@@ -64,6 +85,12 @@
     </ClInclude>
     <ClInclude Include="GeneratedFiles\ui_Stock.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stockinfo.h">
+      <Filter>UI Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_mainwindow.h">
+      <Filter>UI Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
