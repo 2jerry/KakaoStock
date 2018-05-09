@@ -38,7 +38,7 @@ public:
 	{
 		if (MainWindow->objectName().isEmpty())
 			MainWindow->setObjectName(QStringLiteral("MainWindow"));
-		MainWindow->resize(331, 447);
+		MainWindow->resize(331, 408);
 		//       / MainWindow->setStyleSheet("background:rgb(255,255,255)");
 		menuBar = new QMenuBar(MainWindow);
 		menuBar->setObjectName(QStringLiteral("menuBar"));
@@ -70,7 +70,7 @@ public:
 
 	void retranslateUi(QMainWindow *MainWindow)
 	{
-		MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", nullptr));
+		MainWindow->setWindowTitle(QApplication::translate("MainWindow", "StockProgram", nullptr));
 		btn[0]->setText(QApplication::translate("MainWindow", "\355\216\270\354\247\221", nullptr));
 		btn[1]->setText(QApplication::translate("MainWindow", "\354\266\224\352\260\200", nullptr));
 		btn[2]->setText(QApplication::translate("MainWindow", "\354\240\225\353\240\254", nullptr));

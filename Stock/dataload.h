@@ -2,7 +2,6 @@
 #ifndef __DATALOAD_H__
 #define __DATALOAD_H__
 
-
 #include <cpprest/http_client.h>
 #include <cpprest/filestream.h>
 
@@ -25,6 +24,7 @@ using namespace concurrency::streams;
 
 class dataload : public QThread
 {
+	Q_OBJECT
 public:
 	explicit dataload(std::string n,QObject *parent = 0);
 	void htmlLoad(std::string _code);
@@ -33,23 +33,27 @@ public:
 	void wordPasing(std::string _str, std::string _info);
 	time_t cur_time;
 	struct tm *cur_tm;
-	std::string flag;
+	int flag;
 	std::string htmlLoadName;
 	std::map<std::string, std::string> stockName = \
 	{ {"코스피","KOSPI"},{"코스닥","KOSDAQ"},{"삼성전자","005930"},\
 	{"삼성바이오", "207940"}, { "KODEX 레버리지","122630" },\
 	{ "KODEX 인버스","114800" }, {"셀트리온","068270"} };
+	/*std::map<std::string, std::string> info = \
+	{ {"현재가", ""}, { "전일비","" }, { "등락률","" }, \
+	{"거래량", ""}, { "거래대금","" }, \
+	{"최저가", ""}, { "최고가","" } };*/
+	std::map<std::string, std::string> info = \
+	{ {"거래량", ""}, { "현재가","" }, { "전일비","" }, \
+	{"등락률", ""}};
 
 
 private:
 	void run();
-	std::map<std::string, std::string> info = \
-	{ {"현재가", ""}, { "전일비","" }, { "등락률","" }, \
-	{"거래량", ""}, { "거래대금","" }, \
-	{"최저가", ""}, { "최고가","" } };
+	
 
 signals:
-	void FinishCount(int cnt) {};
+	void FinishCount(int cnt);
 
 
 

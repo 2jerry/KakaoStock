@@ -54,6 +54,9 @@
     <ClCompile Include="stockinfo.cpp">
       <Filter>UI Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="소스.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="Stock.h">
@@ -64,6 +67,9 @@
     </QtMoc>
     <QtMoc Include="addwidget.h">
       <Filter>UI Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="dataload.h">
+      <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>
   <ItemGroup>
@@ -80,12 +86,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="dataload.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="GeneratedFiles\ui_Stock.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="stockinfo.h">
       <Filter>UI Header Files</Filter>
     </ClInclude>

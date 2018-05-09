@@ -1,12 +1,22 @@
 #include "stockinfo.h"
+#include "mainwindow.h"
+
+#include <iostream>
+#include <fstream>
+#include <string>
+
+
+//#define qstr(str) QString::fromStdString(str)
+
 stockInfo::stockInfo()
 {
 
+	//ss.startThread();
 }
 QString stockInfo::numToShow(QString number)
 {
 
-	for (int i = number.length(); i>0; i = i - 3)
+	for (int i = number.length(); i > 0; i = i - 3)
 	{
 		if (i == number.length()) continue;
 		else
@@ -14,15 +24,49 @@ QString stockInfo::numToShow(QString number)
 	}
 	return number;
 }
-void stockInfo::setTxt(QString name, QString current, QString trading, QString yesterday, QString exchange)
-{
-	std::locale::global(std::locale("kor"));
-	QFont font;
 
-	tradingVol->setText(numToShow(trading));
-	currentPrice->setText(numToShow(current));
-	yesterdayPrice->setText(numToShow(yesterday));
-	exchangeRate->setText(exchange + "%");
+void stockInfo::setTxt(QString saveName)
+{
+	int color_flag = 0;
+	ifstream ifs;
+	string line;
+	QFont font;
+	font.setFamily("D2coding");
+	font.setPointSize(15);
+
+	for (int i = 0; i < 7; i++)
+	{
+		QString fl = saveName + ".txt";
+		ifs.open(fl.toLocal8Bit().constData(), std::ios::in); // 주식 파일 읽기
+
+		getline(ifs, line); // 거래량
+		//tradingVol->setText(qstr(line));
+		//tradingVol->setText(qstr(ss.dataThread[i]->info["거래량"]));
+		getline(ifs, line); // 등락률
+		//exchangeRate->setText(qstr(line));
+		//exchangeRate->setText(qstr(ss.dataThread[i]->info["등락률"]));
+		if (line.find("-"))
+			color_flag = 1;
+		getline(ifs, line); // 전일비
+		//yesterdayPrice->setText(qstr(line));
+
+		if (color_flag)
+		{
+			currentPrice->setStyleSheet("color:red");
+			yesterdayPrice->setStyleSheet("color:red");
+			exchangeRate->setStyleSheet("color:red");
+		}
+		else
+		{
+			currentPrice->setStyleSheet("color:blue");
+			yesterdayPrice->setStyleSheet("color:blue");
+			exchangeRate->setStyleSheet("color:blue");
+
+		}
+		//stockName->setFont(font);
+		//stockName->setText(saveName); // 선택한 주식 이름 출력
+		ifs.close();
+	}
 
 }
 
@@ -42,13 +86,13 @@ void stockInfo::stockSetup(QGroupBox *stock, QString txtcolor, int cnt)
 	tradingVol->setAlignment(Qt::AlignRight | Qt::AlignTrailing | Qt::AlignVCenter);
 
 	yesterdayPrice = new QLabel(stock);
-	yesterdayPrice->setGeometry(QRect(220, 7, 91, 20));
+	yesterdayPrice->setGeometry(QRect(220, 24, 91, 20));
 	yesterdayPrice->setFont(font);
 	yesterdayPrice->setAlignment(Qt::AlignRight | Qt::AlignTrailing | Qt::AlignVCenter);
 	yesterdayPrice->setStyleSheet(txtcolor);
 
 	exchangeRate = new QLabel(stock);
-	exchangeRate->setGeometry(QRect(220, 24, 91, 20));
+	exchangeRate->setGeometry(QRect(220, 7, 91, 20));
 	exchangeRate->setFont(font);
 	exchangeRate->setAlignment(Qt::AlignRight | Qt::AlignTrailing | Qt::AlignVCenter);
 	exchangeRate->setStyleSheet(txtcolor);
@@ -67,9 +111,9 @@ void stockInfo::stockSetup(QGroupBox *stock, QString txtcolor, int cnt)
 
 	stockName = new QCommandLinkButton(stock);
 
-	stockName->setGeometry(QRect(0, 4, 361, 61));
+	stockName->setGeometry(QRect(0, 3, 361, 61));
 	stockName->setFont(font);
-	stockName->setFocusPolicy(Qt::StrongFocus);
+	//stockName->setFocusPolicy(Qt::StrongFocus);
 	stockName->setIconSize(QSize(0, 0));
 }
 

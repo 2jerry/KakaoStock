@@ -1,5 +1,6 @@
 #ifndef STOCKINFO_H
 #define STOCKINFO_H
+#include "dataload.h"
 
 #include <QtWidgets/QCommandLinkButton>
 #include <QtWidgets/QGroupBox>
@@ -22,15 +23,16 @@
 #include <QtWidgets/QWidget>
 #include <QSignalMapper>
 
-class stockInfo
+class stockInfo 
 {
 public:
 	stockInfo();
-	void setTxt(QString name, QString trading, QString current, QString yesterday, QString exchange);
+	void setTxt(QString saveName);
 	void stockSetup(QGroupBox *stock, QString txtcolor, int cnt);
 	QString numToShow(QString number);
 
 public:
+	
 	QGroupBox * stock;
 	QLabel *tradingVol;              // 거래량
 	QLabel *currentPrice;           // 현재가

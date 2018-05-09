@@ -77,30 +77,30 @@ void addWidget::okButton_clicked()
 		{
 			chk++;
 			check[i]->setChecked(false);
-			QString fl = saveName[i] + ".txt";
-			ifs.open(fl.toLocal8Bit().constData(), std::ios::in); // 주식 파일 읽기
-			getline(ifs, line); // 현재가
-			info[i].currentPrice->setText(QString::fromStdString(line));
-			getline(ifs, line); // 전일비
-			info[i].yesterdayPrice->setText(QString::fromStdString(line));
-			getline(ifs, line); // 거래량
-			info[i].tradingVol->setText(QString::fromStdString(line));
-			getline(ifs, line); // 등락률
-			info[i].exchangeRate->setText(QString::fromStdString(line));
+			//QString fl = saveName[i] + ".txt";
+			//ifs.open(fl.toLocal8Bit().constData(), std::ios::in); // 주식 파일 읽기
+			//getline(ifs, line); // 현재가
+			//info[i].currentPrice->setText(QString::fromStdString(line));
+			//getline(ifs, line); // 전일비
+			//info[i].yesterdayPrice->setText(QString::fromStdString(line));
+			//getline(ifs, line); // 거래량
+			//info[i].tradingVol->setText(QString::fromStdString(line));
+			//getline(ifs, line); // 등락률
+			//info[i].exchangeRate->setText(QString::fromStdString(line));
 
-			if (line.find("-"))
-			{
-				info[i].currentPrice->setStyleSheet("color:red");
-				info[i].yesterdayPrice->setStyleSheet("color:red");
-				info[i].exchangeRate->setStyleSheet("color:red");
-			}
-			else
-			{
-				info[i].currentPrice->setStyleSheet("color:blue");
-				info[i].yesterdayPrice->setStyleSheet("color:blue");
-				info[i].exchangeRate->setStyleSheet("color:blue");
+			//if (line.find("-"))
+			//{
+			//	info[i].currentPrice->setStyleSheet("color:red");
+			//	info[i].yesterdayPrice->setStyleSheet("color:red");
+			//	info[i].exchangeRate->setStyleSheet("color:red");
+			//}
+			//else
+			//{
+			//	info[i].currentPrice->setStyleSheet("color:blue");
+			//	info[i].yesterdayPrice->setStyleSheet("color:blue");
+			//	info[i].exchangeRate->setStyleSheet("color:blue");
 
-			}
+			//}
 
 			info[i].stockName->setFont(font);
 			info[i].stockName->setText(saveName[i]); // 선택한 주식 이름 출력

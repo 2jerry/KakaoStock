@@ -2,6 +2,7 @@
 #include "dataload.h"
 #include <fstream>
 #include <algorithm>
+#include <string>
 dataload::dataload(std::string n, QObject *parent) :
 	QThread(parent)
 {
@@ -71,7 +72,7 @@ void dataload::wordPasing(std::string _str, std::string _info)
 void dataload::run()
 {
 
-	int cnt = 1;
+	int cnt = 7;
 	htmlLoad(stockName[htmlLoadName]);
 	cur_time = time(NULL);
 	cur_tm = localtime(&cur_time);
@@ -84,27 +85,29 @@ void dataload::run()
 	//infoParser(htmlLoadName);
 
 	emit FinishCount(cnt);
+	//emit FinishCount(info);
 
 }
  
 void dataload::stock_Parser(std::string _filename)
 {
-	std::ofstream ofs;
+	std::locale::global(std::locale("kor")); // encoding
+	//std::ofstream ofs;
 	std::string filename = _filename + ".txt";
 	int idx = 0, idx2 = 0;
 	std::string sign,line,rate;
 
-	ofs.open(filename, std::ios::out | std::ios::app);
+	//ofs.open(filename, std::ios::out | std::ios::app);
 	//ofs.open(filename);
-	std::locale::global(std::locale("kor")); // encoding
+
 	std::ifstream ifs(stockName[htmlLoadName]+".html"); // 한글을 읽기 위해 wifstream 사용
 	ifs.imbue(std::locale(std::locale::empty(), \
 		new std::codecvt_utf8<wchar_t, 0x10ffff, \
 		std::consume_header>));
 	//ofs << filename + "\n";
-	ofs << "\n\n2018" << "." << cur_tm->tm_mon+1 << "." << cur_tm->tm_mday << " ";
+	/*ofs << "\n\n2018" << "." << cur_tm->tm_mon+1 << "." << cur_tm->tm_mday << " ";
 	ofs << cur_tm->tm_hour << ":" << cur_tm->tm_min << ":" << cur_tm->tm_sec << " ";
-
+*/
 	while (getline(ifs, line))
 	{
 		if (line.find("<dl class=\"blind\">") != -1)
@@ -115,7 +118,7 @@ void dataload::stock_Parser(std::string _filename)
 	{
 		getline(ifs, line);
 		if (line.find("</dl>") != -1)	break;
-		if (line.find("년") != -1)
+	/*	if (line.find("년") != -1)
 		{
 			if (line.find("장중") != -1)
 				flag = "장중";
@@ -123,7 +126,7 @@ void dataload::stock_Parser(std::string _filename)
 				flag = "장마감";
 
 			ofs << flag + "\n";
-		}
+		}*/
 		if (line.find("현재가") != -1)
 		{
 			idx = line.find("현재가") + 7;
@@ -134,57 +137,59 @@ void dataload::stock_Parser(std::string _filename)
 			{
 				rate = "-";
 				idx = line.find("하락") + 5;
+				flag = -1;
 			}
 			else
 			{
 				rate = "+";
 				idx = line.find("상승") + 5;
+				flag = 1;
 			}
 				
 			idx2 = line.find(" ", idx );
 			rate += line.substr(idx, idx2 - idx);
-			info["전일비"] = rate;
+			info["전일비"] = line.substr(idx, idx2 - idx);
 
 			idx = line.find(" ", idx2 + 3);
 			idx2 = line.find_last_of(" ");
 			if (line.find("마이너스") != -1)
-				sign = "-" + line.substr(idx, idx2 - idx) + "%";
+				sign = "▼" + line.substr(idx+1, idx2 - idx-1) + "%";
 			else
-				sign = "+" + line.substr(idx, idx2 - idx) + "%";
+				sign = "▲" + line.substr(idx+1, idx2 - idx-1) + "%";
 			info["등락률"] = sign;
 
 		}
-		else if (line.find("고가") != -1)
+		else if (line.find("거래량") != -1)
+			wordPasing(line, "거래량");
+	/*	else if (line.find("고가") != -1)
 			wordPasing(line, "최고가");
 
 		else if (line.find("저가") != -1)
 
 			wordPasing(line, "최저가");
 
-		else if (line.find("거래량") != -1)
-			wordPasing(line, "거래량");
+		
 
 		else if (line.find("거래대금") != -1)
-			wordPasing(line, "거래대금");
+			wordPasing(line, "거래대금");*/
 
 	}
 
-
-	for (auto i = info.begin(); i != info.end(); ++i)
-	{
-		ofs << i->first << " : " << i->second << "\n";
-	}
-
-	ofs.close();
+	//for (auto i = info.begin(); i != info.end(); ++i)
+	//{
+	//	//ofs << i->first << " : " << i->second << "\n";
+	//	ofs << i->second << "\n";
+	//}
+	//ofs.close();
 	ifs.close();
 
 }
 
 void dataload::KOSPI_KOSDAQ_Parser(std::string _filename)
 {	
-	std::ofstream ofs;
+	//std::ofstream ofs;
 	std::string filename = _filename + ".txt";
-	ofs.open(filename, std::ios::out | std::ios::app);
+	//ofs.open(filename, std::ios::out | std::ios::app);
 	
 	std::string line,rate;
 	int cnt = 0;
@@ -198,13 +203,13 @@ void dataload::KOSPI_KOSDAQ_Parser(std::string _filename)
 		new std::codecvt_utf8<wchar_t, 0x10ffff, \
 		std::consume_header>));
 	//ofs << filename + "\n";
-	ofs <<"\n\n2018" <<"."<< cur_tm->tm_mon << "." << cur_tm->tm_mday << " ";
-	ofs << cur_tm->tm_hour << ":" << cur_tm->tm_min << ":" << cur_tm->tm_sec << " " ;
+	//ofs <<"\n\n2018" <<"."<< cur_tm->tm_mon << "." << cur_tm->tm_mday << " ";
+	//ofs << cur_tm->tm_hour << ":" << cur_tm->tm_min << ":" << cur_tm->tm_sec << " " ;
 
 
 	while (getline(ifs, line))
 	{
-		if (line.find("<span id=\"time\">") != -1)
+	/*	if (line.find("<span id=\"time\">") != -1)
 		{
 			if (line.find("장중") != -1)
 				flag = "장중";
@@ -212,7 +217,7 @@ void dataload::KOSPI_KOSDAQ_Parser(std::string _filename)
 				flag = "장마감";
 
 			ofs << flag + "\n";
-		}
+		}*/
 		if (line.find("<div class=\"subtop_sise_detail\">") != -1)
 			break;
 	}
@@ -227,24 +232,34 @@ void dataload::KOSPI_KOSDAQ_Parser(std::string _filename)
 		}
 		if (line.find("change_value_and_rate") != -1)
 		{
-			if (line.find("하락") != -1)
+			if (line.find("-") != -1)
 			{
-				rate = "▼";
-				idx = line.find("하락") + 5;
+				flag = -1;
+				rate = "-";
+				idx = line.find("-") + 5;
 			}
 			else
 			{
-				rate = "▲";
-				idx = line.find("상승") + 5;
+				flag = 1;
+				rate = "+";
+				idx = line.find("+") + 5;
 			}
 			idx = line.find(">");
 			idx2 = line.find(">", idx + 5) + 1;
 			idx = line.find("<", idx2);
-			info["전일비"] = rate+line.substr(idx2, idx - idx2); //O
+			//info["전일비"] = rate+line.substr(idx2, idx - idx2); //O
+			info["전일비"] =line.substr(idx2, idx - idx2); //O
 
-			idx = line.find(">", idx) + 2;
+
+			idx = line.find(">", idx) + 3;
 			idx2 = line.find("<", idx);
-			info["등락률"] = line.substr(idx, idx2 - idx); // O
+			//std::string st = line.substr(idx, idx2 - idx);
+			
+			if (rate == "-")
+				info["등락률"] = "▼" + line.substr(idx, idx2 - idx); // O
+			else
+				info["등락률"] = "▲" + line.substr(idx, idx2 - idx); // 
+
 
 		}
 		//if (line.find("<caption>") != -1)
@@ -265,13 +280,13 @@ void dataload::KOSPI_KOSDAQ_Parser(std::string _filename)
 						info["거래량"] = line.substr(idx, idx2 - idx); // O
 						break;
 					case 2:
-						info["거래대금"] = line.substr(idx, idx2 - idx);
+						//info["거래대금"] = line.substr(idx, idx2 - idx);
 						break;
 					case 3:
-						info["최저가"] = line.substr(idx, idx2 - idx);
+						//info["최저가"] = line.substr(idx, idx2 - idx);
 						break;
 					case 4:
-						info["최고가"] = line.substr(idx, idx2 - idx);
+						//info["최고가"] = line.substr(idx, idx2 - idx);
 						break;
 					}
 				}
@@ -280,13 +295,14 @@ void dataload::KOSPI_KOSDAQ_Parser(std::string _filename)
 
 		}
 	}
-
+/*
 	for (auto i = info.begin(); i != info.end(); ++i)
 	{
-		ofs << i->first << " : " << i->second << "\n";
-	}
-	ofs << "\n\n";
-	ofs.close();
+		//ofs << i->first << " : " << i->second << "\n";
+		//ofs<< i->second << "\n";
+	}*/
+	//ofs << "\n\n";
+	//ofs.close();
 	ifs.close();
 
 }

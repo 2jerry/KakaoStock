@@ -120,13 +120,20 @@
   <ItemGroup>
     <ClCompile Include="addwidget.cpp" />
     <ClCompile Include="dataload.cpp" />
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="main.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="mainwindow.cpp" />
-    <ClCompile Include="Stock.cpp" />
+    <ClCompile Include="Stock.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="stockinfo.cpp" />
+    <ClCompile Include="소스.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <QtMoc Include="Stock.h" />
+    <QtMoc Include="Stock.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </QtMoc>
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="Stock.ui" />
@@ -142,8 +149,7 @@
     <QtMoc Include="mainwindow.h" />
     <ClInclude Include="stockinfo.h" />
     <QtMoc Include="addwidget.h" />
-    <ClInclude Include="dataload.h" />
-    <ClInclude Include="GeneratedFiles\ui_Stock.h" />
+    <QtMoc Include="dataload.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
