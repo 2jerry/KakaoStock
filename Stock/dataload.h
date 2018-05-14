@@ -40,6 +40,9 @@ public:
 	std::map<std::string, std::string> info = \
 	{ {"거래량", ""}, { "현재가","" }, { "전일비","" }, \
 	{"등락률", ""}};
+	std::map<std::string, std::string> tmp_info = \
+	{ {"거래량", ""}, { "현재가","" }, { "전일비","" }, \
+	{"등락률", ""}};
 
 private:
 	void run();

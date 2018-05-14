@@ -230,7 +230,7 @@ var gnb_naverme_layer_close_callback = function(){
 					var gnb_logout=encodeURIComponent(location.href);
 					var gnb_one_naver = 1;
 					</script>
-					<script type="text/javascript" src="http://static.gn.naver.net/template/gnb_quirks_euckr.nhn?20180509">
+					<script type="text/javascript" src="http://static.gn.naver.net/template/gnb_quirks_euckr.nhn?20180514">
 					</script>
 				</div>
 			</div>
@@ -537,7 +537,7 @@ var gnb_naverme_layer_close_callback = function(){
 	                                        <span class="blind">실시간</span> 
 	                                        <span class="ly_help">실시간으로 지수 <br>데이터를 제공 중입니다.</span> 
 	                                </a>
-	                                <span id="time">2018.05.09 장마감</span> 
+	                                <span id="time">2018.05.14 15:00 장중</span> 
 	                        </div> 
 	                </div>
 	                <div class="box_top_sub" style="width:592px;_width:594px;height:296px"> 
@@ -558,26 +558,26 @@ function select_chart(pst)
 }
 </script>
 								<li id="chart_0" class="on"><a href="javascript:select_chart(0)"><strong>1</strong>일</a>
-									<div class="graph"><img src="http://imgstock.naver.net/chart3/day/KOSDAQ.png?sidcode=1525855803929" alt="그래프" width="201" height="140" onError="(new jindo.$Ajax('http://finance.naver.com/onErrorImageUrlSave.nhn', {type:'jsonp', method:'get'})).request({imageUrl:this.src + ' | finance'});"></div>
+									<div class="graph"><img src="http://imgstock.naver.net/chart3/day/KOSDAQ.png?sidcode=1526277674385" alt="그래프" width="201" height="140" onError="(new jindo.$Ajax('http://finance.naver.com/onErrorImageUrlSave.nhn', {type:'jsonp', method:'get'})).request({imageUrl:this.src + ' | finance'});"></div>
 								</li>
 								<li id="chart_1" class=""><a href="javascript:select_chart(1)">3개월</a>
-									<div class="graph"><img src="http://imgstock.naver.net/chart3/day90/KOSDAQ.png?sidcode=1525855803929" alt="그래프" width="201" height="140"></div>
+									<div class="graph"><img src="http://imgstock.naver.net/chart3/day90/KOSDAQ.png?sidcode=1526277674385" alt="그래프" width="201" height="140"></div>
 								</li>
 								<li id="chart_2"  class=""><a href="javascript:select_chart(2)">1년</a>
-									<div class="graph"><img src="http://imgstock.naver.net/chart3/day365/KOSDAQ.png?sidcode=1525855803929" alt="그래프" width="201" height="140"></div>
+									<div class="graph"><img src="http://imgstock.naver.net/chart3/day365/KOSDAQ.png?sidcode=1526277674385" alt="그래프" width="201" height="140"></div>
 								</li>
 								<li id="chart_3"  class=""><a href="javascript:select_chart(3)">3년</a>
-									<div class="graph"><img src="http://imgstock.naver.net/chart3/day1095/KOSDAQ.png?sidcode=1525855803929" alt="그래프" width="201" height="140"></div>
+									<div class="graph"><img src="http://imgstock.naver.net/chart3/day1095/KOSDAQ.png?sidcode=1526277674385" alt="그래프" width="201" height="140"></div>
 								</li>
 							</ul>
 						</div>
 		<div class="subtop_sise_detail">
 	        <!-- [D] 상승장일때 up, 하락장일때 dn 클래스 추가 (보합시 추가 없음) --> 
-	        <div class="quotient up" id ="quotient"> 
-	                <em id="now_value">850.85</em>
+	        <div class="quotient dn" id ="quotient"> 
+	                <em id="now_value">862.05</em>
 					
 						                
-	                <span class="fluc" id="change_value_and_rate"><span>23.63</span> +2.86%<span class="blind">상승</span></span> 
+	                <span class="fluc" id="change_value_and_rate"><span>3.88</span> -0.45%<span class="blind">상승</span></span> 
 	        </div> 
 
 	
@@ -589,15 +589,15 @@ function select_chart(pst)
 	
 	        	<tr>
 					<th class="th"><span class="blind">거래량(천주)</span></th> 
-                    <td class="td" id="quant">891,460</td> 
+                    <td class="td" id="quant">843,937</td> 
                     <th class="th2"><span class="blind">거래대금(백만)</span></th> 
-                    <td class="td2" id="amount">5,789,784</td>
+                    <td class="td2" id="amount">4,655,444</td>
                 </tr>
                 <tr>
                     <th><span class="blind">장중최고</span></th> 
-                    <td class="td" id="high_value">851.28</td> 
+                    <td class="td" id="high_value">869.92</td> 
                     <th><span class="blind">장중최저</span></th> 
-                    <td class="td2" id="low_value">815.27</td>                 
+                    <td class="td2" id="low_value">855.54</td>                 
                 </tr>
                 <tr>
                     <th><span class="blind">52주최고</span></th> 
@@ -610,10 +610,10 @@ function select_chart(pst)
 	                <td colspan="3" class="td3"> 
 	                        <ul> 
 	                        <li class="lst"><span class="blind">상한종목수</span><a href="/sise/sise_upper.nhn"><span>2</span></a></li> 
-	                        <li class="lst2"><span class="blind">상승종목수</span><a href="/sise/sise_rise.nhn"><span>721</span></a></li> 
-	                        <li class="lst3"><span class="blind">보합종목수</span><a href="/sise/sise_steady.nhn"><span>72</span></a></li> 
-	                        <li class="lst4"><span class="blind">하락종목수</span><a href="/sise/sise_fall.nhn"><span>434</span></a></li> 
-	                        <li class="lst5"><span class="blind">하한종목수</span><a href="/sise/sise_lower.nhn"><span>1</span></a></li> 
+	                        <li class="lst2"><span class="blind">상승종목수</span><a href="/sise/sise_rise.nhn"><span>483</span></a></li> 
+	                        <li class="lst3"><span class="blind">보합종목수</span><a href="/sise/sise_steady.nhn"><span>68</span></a></li> 
+	                        <li class="lst4"><span class="blind">하락종목수</span><a href="/sise/sise_fall.nhn"><span>680</span></a></li> 
+	                        <li class="lst5"><span class="blind">하한종목수</span><a href="/sise/sise_lower.nhn"><span>0</span></a></li> 
 	                        </ul> 
 	                </td>                 
                 </tr>
@@ -630,13 +630,13 @@ function select_chart(pst)
 		
 	    <dl class="lst_kos_info"> 
 	    <dt><span class="blind">투자자별 매매동향</span></dt> 
-	    <dd class="dd">개인<br><span class="dn">-1,771<span>억</span></span></dd> 
-	    <dd class="dd">외국인<br><span class="up">+838<span>억</span></span></dd> 
-	    <dd class="dd">기관<br><span class="up">+1,004<span>억</span></span></dd> 
+	    <dd class="dd">개인<br><span class="up">+1,058<span>억</span></span></dd> 
+	    <dd class="dd">외국인<br><span class="dn">-579<span>억</span></span></dd> 
+	    <dd class="dd">기관<br><span class="dn">-273<span>억</span></span></dd> 
 	    <dt class="last"><span class="blind">프로그램 매매동향</span></dt> 
-	    <dd class="dd">차익<br><span class="up">+42<span>억</span></span></dd> 
-	    <dd class="dd">비차익<br><span class="up">+371<span>억</span></span></dd> 
-	    <dd class="dd">전체<br><span class="up">+413<span>억</span></span></dd> 
+	    <dd class="dd">차익<br><span class="dn">-97<span>억</span></span></dd> 
+	    <dd class="dd">비차익<br><span class="dn">-394<span>억</span></span></dd> 
+	    <dd class="dd">전체<br><span class="dn">-490<span>억</span></span></dd> 
 	    </dl> 
 					</div>
 				</div>
@@ -646,28 +646,28 @@ function select_chart(pst)
 						<ul class="sise_report">
 						
 							<li>
-								<span class="tit"><a href="/news/news_read.nhn?article_id=0004098121&office_id=018&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&page=1">[표]코스닥 기관/외국인 매매동향 (5/9 3시30분)</a></span>
-								<p class="info"><span class="paper">이데일리</span> <span class="date">2018-05-09 16:48</span></p>
+								<span class="tit"><a href="/news/news_read.nhn?article_id=0003296205&office_id=011&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&page=1">오후 2:30 현재 코스닥은 47:53으로 매수우위, 매수강세 업종은 방..</a></span>
+								<p class="info"><span class="paper">서울경제</span> <span class="date">2018-05-14 14:31</span></p>
 							</li>
 						
 							<li>
-								<span class="tit"><a href="/news/news_read.nhn?article_id=0000405683&office_id=366&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&page=1">[마켓뷰] 코스닥 끌어올리는 제약&middot;바이오...코스피는 닷새 연속 하..</a></span>
-								<p class="info"><span class="paper">조선비즈</span> <span class="date">2018-05-09 16:31</span></p>
+								<span class="tit"><a href="/news/news_read.nhn?article_id=0003296161&office_id=011&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&page=1">출판&middot;매체복제업(-2.21%&darr;)이 약세인 가운데, 코스닥도 하락 흐름(..</a></span>
+								<p class="info"><span class="paper">서울경제</span> <span class="date">2018-05-14 14:02</span></p>
 							</li>
 						
 							<li>
-								<span class="tit"><a href="/news/news_read.nhn?article_id=0004049092&office_id=008&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&page=1">변동성 커진 코스닥… 바이오 과매수 해소는 '긍정적' </a></span>
-								<p class="info"><span class="paper">머니투데이</span> <span class="date">2018-05-09 16:26</span></p>
+								<span class="tit"><a href="/news/news_read.nhn?article_id=0003296157&office_id=011&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&page=1">오후 2:00 현재 코스닥은 46:54으로 매수우위, 매수강세 업종은 방..</a></span>
+								<p class="info"><span class="paper">서울경제</span> <span class="date">2018-05-14 14:01</span></p>
 							</li>
 						
 							<li>
-								<span class="tit"><a href="/news/news_read.nhn?article_id=0001391112&office_id=016&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&page=1">[마감시황] 코스닥, 외인ㆍ기관 쌍끌이에 급반등&hellip;바이오株 롤러코..</a></span>
-								<p class="info"><span class="paper">헤럴드경제</span> <span class="date">2018-05-09 16:24</span></p>
+								<span class="tit"><a href="/news/news_read.nhn?article_id=0003296111&office_id=011&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&page=1">오후 1:30 현재 코스닥은 46:54으로 매수우위, 매수강세 업종은 통..</a></span>
+								<p class="info"><span class="paper">서울경제</span> <span class="date">2018-05-14 13:31</span></p>
 							</li>
 						
 							<li>
-								<span class="tit"><a href="/news/news_read.nhn?article_id=0010074896&office_id=001&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&page=1">三電 3% 하락에 코스피 닷새째 약세&hellip;코스닥은 3% 가까이 반등(종합..</a></span>
-								<p class="info"><span class="paper">연합뉴스</span> <span class="date">2018-05-09 16:09</span></p>
+								<span class="tit"><a href="/news/news_read.nhn?article_id=0003296082&office_id=011&mode=LSS3D&type=0&section_id=101&section_id2=258&section_id3=401&page=1">오후 1:00 현재 코스닥은 46:54으로 매수우위, 매수강세 업종은 방..</a></span>
+								<p class="info"><span class="paper">서울경제</span> <span class="date">2018-05-14 13:01</span></p>
 							</li>
 						
 						</ul>
@@ -678,33 +678,33 @@ function select_chart(pst)
 					<ul class="sise_report">
 					
 						<li>
-							<span class="tit"><a href="/research/market_info_read.nhn?nid=19360&page=1">KOSDAQ 하락 이유와 전망</a></span>
-							<p class="info2"><span class="paper">신한금융투자</span> <span class="date">2018-05-09</span></p>
+							<span class="tit"><a href="/research/market_info_read.nhn?nid=19371&page=1">[Start with IBKS] KOSPI는 지정학적 리스크 완화 기대와...</a></span>
+							<p class="info2"><span class="paper">IBK투자증권</span> <span class="date">2018-05-14</span></p>
 						</li>
 					
 						<li>
-							<span class="tit"><a href="/research/market_info_read.nhn?nid=19359&page=1">중화권 증시 이틀째 강세 지속</a></span>
-							<p class="info2"><span class="paper">한국투자증권</span> <span class="date">2018-05-09</span></p>
+							<span class="tit"><a href="/research/market_info_read.nhn?nid=19370&page=1">美 증시는 주요 지수가 미국 소비자물가에 이어...</a></span>
+							<p class="info2"><span class="paper">유안타증권</span> <span class="date">2018-05-14</span></p>
 						</li>
 					
 						<li>
-							<span class="tit"><a href="/research/market_info_read.nhn?nid=19358&page=1">교보박스 브리핑</a></span>
-							<p class="info2"><span class="paper">교보증권</span> <span class="date">2018-05-09</span></p>
+							<span class="tit"><a href="/research/market_info_read.nhn?nid=19369&page=1">제약주 강세에 중화권 증시 상승</a></span>
+							<p class="info2"><span class="paper">한국투자증권</span> <span class="date">2018-05-11</span></p>
 						</li>
 					
 						<li>
-							<span class="tit"><a href="/research/market_info_read.nhn?nid=19357&page=1">[Start with IBKS] KOSPI는 의약품 업종에 대한 투자심리 위축으로 ..</a></span>
-							<p class="info2"><span class="paper">IBK투자증권</span> <span class="date">2018-05-09</span></p>
+							<span class="tit"><a href="/research/market_info_read.nhn?nid=19368&page=1">교보박스 브리핑</a></span>
+							<p class="info2"><span class="paper">교보증권</span> <span class="date">2018-05-11</span></p>
 						</li>
 					
 						<li>
-							<span class="tit"><a href="/research/market_info_read.nhn?nid=19356&page=1">美 증시는 트럼프대통령의 이란 핵협정 탈퇴 발표 불구, 보합. </a></span>
-							<p class="info2"><span class="paper">유안타증권</span> <span class="date">2018-05-09</span></p>
+							<span class="tit"><a href="/research/market_info_read.nhn?nid=19367&page=1">중국 A주 MSCI EM 지수 편입, 구더기 무서워 장 못 담그랴</a></span>
+							<p class="info2"><span class="paper">하나금융투자</span> <span class="date">2018-05-11</span></p>
 						</li>
 					
 					</ul>
 				</div>
-		<iframe name='time' title="시간별시세 영역" src='/sise/sise_index_time.nhn?code=KOSDAQ&thistime=20180509175000' width="100%"  height=265 marginheight=0 bottommargin=0 topmargin=0 SCROLLING=no frameborder=0></iframe>
+		<iframe name='time' title="시간별시세 영역" src='/sise/sise_index_time.nhn?code=KOSDAQ&thistime=20180514150050' width="100%"  height=265 marginheight=0 bottommargin=0 topmargin=0 SCROLLING=no frameborder=0></iframe>
 
 		<iframe name='day' title="일별시세 영역" src='/sise/sise_index_day.nhn?code=KOSDAQ' width="100%"  height="265" marginheight=0 bottommargin=0 topmargin=0 SCROLLING=no frameborder=0></iframe>	
 		
@@ -762,7 +762,7 @@ function select_chart(pst)
 					<tr>
 						<td class="tr" align="right"><img src="http://imgstock.naver.net/images5/ico_n01.gif" alt="01" width="11" height="11"></td>
 						<td><a href="/item/main.nhn?code=005930" onClick="clickcr(this, 'rpk.list', '005930', '1', event);" class="company">삼성전자</a></td>
-						<td class="number">50,900</td>
+						<td class="number">50,000</td>
 						<td class="tc">
 				<img src="http://imgstock.naver.com/images/images4/ico_down.gif"  alt="down" width="7" height="6" class="updown">
 			</td>
@@ -770,17 +770,17 @@ function select_chart(pst)
 
 					<tr>
 						<td class="tr" align="right"><img src="http://imgstock.naver.net/images5/ico_n02.gif" alt="01" width="11" height="11"></td>
-						<td><a href="/item/main.nhn?code=005690" onClick="clickcr(this, 'rpk.list', '005690', '2', event);" class="company">파미셀</a></td>
-						<td class="number">19,300</td>
+						<td><a href="/item/main.nhn?code=000720" onClick="clickcr(this, 'rpk.list', '000720', '2', event);" class="company">현대건설</a></td>
+						<td class="number">73,400</td>
 						<td class="tc">
-				<img src="http://imgstock.naver.com/images/images4/ico_up02.gif"  alt="uplimit" width="7" height="11" class="updown">
+				<img src="http://imgstock.naver.com/images/images4/ico_up.gif"  alt="up" width="7" height="6" class="updown">
 			</td>
 					</tr>
 
 					<tr>
 						<td class="tr" align="right"><img src="http://imgstock.naver.net/images5/ico_n03.gif" alt="01" width="11" height="11"></td>
-						<td><a href="/item/main.nhn?code=068270" onClick="clickcr(this, 'rpk.list', '068270', '3', event);" class="company">셀트리온</a></td>
-						<td class="number">259,000</td>
+						<td><a href="/item/main.nhn?code=064350" onClick="clickcr(this, 'rpk.list', '064350', '3', event);" class="company">현대로템</a></td>
+						<td class="number">39,200</td>
 						<td class="tc">
 				<img src="http://imgstock.naver.com/images/images4/ico_up.gif"  alt="up" width="7" height="6" class="updown">
 			</td>
@@ -788,19 +788,19 @@ function select_chart(pst)
 
 					<tr>
 						<td class="tr" align="right"><img src="http://imgstock.naver.net/images5/ico_n04.gif" alt="01" width="11" height="11"></td>
-						<td><a href="/item/main.nhn?code=064350" onClick="clickcr(this, 'rpk.list', '064350', '4', event);" class="company">현대로템</a></td>
-						<td class="number">33,850</td>
+						<td><a href="/item/main.nhn?code=006390" onClick="clickcr(this, 'rpk.list', '006390', '4', event);" class="company">현대시멘트</a></td>
+						<td class="number">38,450</td>
 						<td class="tc">
-				<img src="http://imgstock.naver.com/images/images4/ico_up.gif"  alt="up" width="7" height="6" class="updown">
+				<img src="http://imgstock.naver.com/images/images4/ico_up02.gif"  alt="uplimit" width="7" height="11" class="updown">
 			</td>
 					</tr>
 
 					<tr>
 						<td class="tr" align="right"><img src="http://imgstock.naver.net/images5/ico_n05.gif" alt="01" width="11" height="11"></td>
-						<td><a href="/item/main.nhn?code=207940" onClick="clickcr(this, 'rpk.list', '207940', '5', event);" class="company">삼성바이오로직스</a></td>
-						<td class="number">398,000</td>
+						<td><a href="/item/main.nhn?code=068270" onClick="clickcr(this, 'rpk.list', '068270', '5', event);" class="company">셀트리온</a></td>
+						<td class="number">256,500</td>
 						<td class="tc">
-				<img src="http://imgstock.naver.com/images/images4/ico_up.gif"  alt="up" width="7" height="6" class="updown">
+				<img src="http://imgstock.naver.com/images/images4/ico_down.gif"  alt="down" width="7" height="6" class="updown">
 			</td>
 					</tr>
 
@@ -818,27 +818,27 @@ function select_chart(pst)
 					<ul class="right_list_1_2">
 					
 
-						<li><a href="http://finance.naver.com/news/news_read.nhn?article_id=0003935961&office_id=015&mode=RANK" title="'단기 급락' 바이오주 '반등'&hellip;&quot;중장기적 성장성 유효&quot;" onClick="clickcr(this, 'rnw.list', '0003935961', '1', event)">'단기 급락' 바이오주 '반등'…"중장기적 성장성 유효"</a></li>
+						<li><a href="http://finance.naver.com/news/news_read.nhn?article_id=0003938319&office_id=015&mode=RANK" title="&quot;증시의 관심은 아르헨티나서 6월 FOMC로&quot;" onClick="clickcr(this, 'rnw.list', '0003938319', '1', event)">"증시의 관심은 아르헨티나서 6월 FOMC로"</a></li>
 						
 
 					
 
-						<li><a href="http://finance.naver.com/news/news_read.nhn?article_id=0004048992&office_id=008&mode=RANK" title="[특징주]급락 바이오株, 분식회계 유보 발언에 '상승' 반전" onClick="clickcr(this, 'rnw.list', '0004048992', '2', event)">[특징주]급락 바이오株, 분식회계 유보 발언에 '상승' 반전</a></li>
+						<li><a href="http://finance.naver.com/news/news_read.nhn?article_id=0004050685&office_id=008&mode=RANK" title="합병발표 후 힘못쓰는 CJ E&M 주가&hellip; 증권가 &quot;저평가 심각&quot;" onClick="clickcr(this, 'rnw.list', '0004050685', '2', event)">합병발표 후 힘못쓰는 CJ E&M 주가… 증권가 "저평가 심각"</a></li>
 						
 
 					
 
-						<li><a href="http://finance.naver.com/news/news_read.nhn?article_id=0003935840&office_id=015&mode=RANK" title="[초점]출렁이는 코스닥&hellip;&quot;변동성 구간 당분간 지속&quot;" onClick="clickcr(this, 'rnw.list', '0003935840', '3', event)">[초점]출렁이는 코스닥…"변동성 구간 당분간 지속"</a></li>
+						<li><a href="http://finance.naver.com/news/news_read.nhn?article_id=0004050728&office_id=008&mode=RANK" title="셀트리온, 트럼프 약값 인하 가장 큰 수혜 예상-이베스트" onClick="clickcr(this, 'rnw.list', '0004050728', '3', event)">셀트리온, 트럼프 약값 인하 가장 큰 수혜 예상-이베스트</a></li>
 						
 
 					
 
-						<li><a href="http://finance.naver.com/news/news_read.nhn?article_id=0004234490&office_id=277&mode=RANK" title="[굿모닝 증시]코스닥 급락, 하락장 시작 아니다" onClick="clickcr(this, 'rnw.list', '0004234490', '4', event)">[굿모닝 증시]코스닥 급락, 하락장 시작 아니다</a></li>
+						<li><a href="http://finance.naver.com/news/news_read.nhn?article_id=0004237866&office_id=277&mode=RANK" title="실적 늘었는데 주가 내린 4대은행株" onClick="clickcr(this, 'rnw.list', '0004237866', '4', event)">실적 늘었는데 주가 내린 4대은행株</a></li>
 						
 
 					
 
-						<li><a href="http://finance.naver.com/news/news_read.nhn?article_id=0004049062&office_id=008&mode=RANK" title="코스피, 외인 '팔자' 5일째 하락&hellip; '롤러코스터' 코스닥 2% 강세 " onClick="clickcr(this, 'rnw.list', '0004049062', '5', event)">코스피, 외인 '팔자' 5일째 하락… '롤러코스터' 코스닥 2% 강세 </a></li>
+						<li><a href="http://finance.naver.com/news/news_read.nhn?article_id=0003146295&office_id=020&mode=RANK" title="국민연금, 삼성증권 유령배당으로 158억 손실" onClick="clickcr(this, 'rnw.list', '0003146295', '5', event)">국민연금, 삼성증권 유령배당으로 158억 손실</a></li>
 						
 
 					
@@ -1068,7 +1068,7 @@ function refreshQuote(res) {
 		}
 	}
 }
-var dateTime = "20180509175000";
+var dateTime = "20180514150050";
 var closeDate = dateTime.substring(0,4) + "." + dateTime.substring(4,6) + "." + dateTime.substring(6,8);
 
 function initChartRefresh() {
@@ -1228,6 +1228,13 @@ function togglePanelFooter(layerId) {
             hidePannel(layerId);
         } else {
             showPannel(layerId);
+        }
+    }
+}
+</script>
+</div>
+</body>
+</html>ml>>
         }
     }
 }

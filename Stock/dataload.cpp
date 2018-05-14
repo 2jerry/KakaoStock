@@ -77,10 +77,10 @@ void dataload::run()
 	cur_time = time(NULL);
 	cur_tm = localtime(&cur_time);
 	
-	if (htmlLoadName == "코스피" || htmlLoadName == "코스닥")
+	/*if (htmlLoadName == "코스피" || htmlLoadName == "코스닥")
 		KOSPI_KOSDAQ_Parser(htmlLoadName);
 	else
-		stock_Parser(htmlLoadName);
+		stock_Parser(htmlLoadName);*/
 
 	//infoParser(htmlLoadName);
 

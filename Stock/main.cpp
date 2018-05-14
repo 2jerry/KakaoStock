@@ -1,7 +1,7 @@
 
 #include "mainwindow.h"
 #include <QApplication>
-
+#include <Windows.h>
 int main(int argc, char *argv[])
 {
 	QApplication a(argc, argv);
@@ -11,6 +11,13 @@ int main(int argc, char *argv[])
 	int cnt = 0;
 	for (int i = 0; i < 7; i++)
 		w.dataThread[i]->start();
+	//while (cnt < 100)
+	//{
+
+	//
+	//	Sleep(300); //0.3ÃÊ
+	//	cnt++;
+	//}
 
 	//Stock s;
 	//int t = 0;
