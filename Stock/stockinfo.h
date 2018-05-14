@@ -32,7 +32,6 @@ public:
 	QString numToShow(QString number);
 
 public:
-	
 	QGroupBox * stock;
 	QLabel *tradingVol;              // 거래량
 	QLabel *currentPrice;           // 현재가

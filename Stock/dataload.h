@@ -20,8 +20,6 @@ using namespace web::http;
 using namespace web::http::client;
 using namespace concurrency::streams;
 
-
-
 class dataload : public QThread
 {
 	Q_OBJECT
@@ -39,24 +37,15 @@ public:
 	{ {"코스피","KOSPI"},{"코스닥","KOSDAQ"},{"삼성전자","005930"},\
 	{"삼성바이오", "207940"}, { "KODEX 레버리지","122630" },\
 	{ "KODEX 인버스","114800" }, {"셀트리온","068270"} };
-	/*std::map<std::string, std::string> info = \
-	{ {"현재가", ""}, { "전일비","" }, { "등락률","" }, \
-	{"거래량", ""}, { "거래대금","" }, \
-	{"최저가", ""}, { "최고가","" } };*/
 	std::map<std::string, std::string> info = \
 	{ {"거래량", ""}, { "현재가","" }, { "전일비","" }, \
 	{"등락률", ""}};
 
-
 private:
 	void run();
-	
 
 signals:
 	void FinishCount(int cnt);
-
-
-
 };
 
 
