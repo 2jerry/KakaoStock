@@ -38,15 +38,15 @@ public:
 	{
 		if (MainWindow->objectName().isEmpty())
 			MainWindow->setObjectName(QStringLiteral("MainWindow"));
-		MainWindow->resize(331, 408);
-		//       / MainWindow->setStyleSheet("background:rgb(255,255,255)");
+		MainWindow->resize(316, 408);
+		 //MainWindow->setStyleSheet("background:rgb(255,255,255)");
 		menuBar = new QMenuBar(MainWindow);
 		menuBar->setObjectName(QStringLiteral("menuBar"));
 		MainWindow->setMenuBar(menuBar);
 
 		QFont font;
-		font.setFamily(QString::fromUtf8("\353\247\221\354\235\200 \352\263\240\353\224\225"));
-		font.setPointSize(11);
+		font.setFamily(QString::fromUtf8("\353\217\213\354\233\200"));
+		font.setPointSize(10.5);
 
 		centralWidget = new QWidget(MainWindow);
 		centralWidget->setObjectName(QStringLiteral("centralWidget"));
@@ -58,10 +58,10 @@ public:
 		for (int i = 0; i<3; i++)
 		{
 			btn[i] = new QPushButton(MainWindow);
-			btn[i]->setGeometry(QRect(i * 110, 0, 111, 31));
+			btn[i]->setGeometry(QRect(i * 105, 0, 106, 31));
 			btn[i]->setFont(font);
-			btn[i]->setStyleSheet("border: none"); // 버튼
-
+			btn[i]->setStyleSheet("background:rgba(240,240,240,0)"); // 버튼
+			
 		}
 		retranslateUi(MainWindow);
 
@@ -72,7 +72,7 @@ public:
 	{
 		MainWindow->setWindowTitle(QApplication::translate("MainWindow", "StockProgram", nullptr));
 		btn[0]->setText(QApplication::translate("MainWindow", "\355\216\270\354\247\221", nullptr));
-		btn[1]->setText(QApplication::translate("MainWindow", "\354\266\224\352\260\200", nullptr));
+		btn[1]->setText(QApplication::translate("MainWindow", "\354\242\205\353\252\251\354\266\224\352\260\200", nullptr));
 		btn[2]->setText(QApplication::translate("MainWindow", "\354\240\225\353\240\254", nullptr));
 	} // retranslateUi
 

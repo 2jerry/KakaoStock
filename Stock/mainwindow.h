@@ -33,7 +33,7 @@ public:
 	addWidget add;
 	stockInfo info[7]; // 주식 7개 
 	dataload *dataThread[7]; // 쓰레드의 info 안에 정보 들어가 익음
-	std::string stockName[7] = { "코스피","코스닥", "삼성전자","삼성바이오","KODEX 레버리지",\
+	std::string stockName[7] = { "코스피 지수","코스닥 지수", "삼성전자","삼성바이오로직스","KODEX 레버리지",\
 		"KODEX 인버스","셀트리온" };
 
 

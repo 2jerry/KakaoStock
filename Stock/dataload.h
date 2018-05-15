@@ -34,8 +34,8 @@ public:
 	int flag;
 	std::string htmlLoadName;
 	std::map<std::string, std::string> stockName = \
-	{ {"코스피","KOSPI"},{"코스닥","KOSDAQ"},{"삼성전자","005930"},\
-	{"삼성바이오", "207940"}, { "KODEX 레버리지","122630" },\
+	{ {"코스피 지수","KOSPI"},{"코스닥 지수","KOSDAQ"},{"삼성전자","005930"},\
+	{"삼성바이오로직스", "207940"}, { "KODEX 레버리지","122630" },\
 	{ "KODEX 인버스","114800" }, {"셀트리온","068270"} };
 	std::map<std::string, std::string> info = \
 	{ {"거래량", ""}, { "현재가","" }, { "전일비","" }, \

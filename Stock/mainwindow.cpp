@@ -47,7 +47,7 @@ MainWindow::MainWindow(QWidget *parent) :
 	add.info[i].stockSetup(add.info[i].stock, "color:red;", i);
 	}
 	*/
-	m_timer->start();
+	//m_timer->start();
 }
 
 MainWindow::~MainWindow()
@@ -61,7 +61,9 @@ void MainWindow::set_window()
 	for (int i = 0; i < 7; i++)
 	{
 		info[i].stock = new QGroupBox(ui->centralWidget);
-		info[i].stockSetup(info[i].stock, "color:red;", i);
+		//info[i].stock->setStyleSheet("background:rgb(255,255,255)");
+		info[i].stockSetup(info[i].stock, "color:rgb(204,0,0);", i);
+		//info[i].stock->setStyleSheet("border: none");
 	}
 
 	// 주식 정보 출력
@@ -109,12 +111,12 @@ void MainWindow::on_thread_finish(const int _cnt)
 	std::ofstream ofs;
 	ofs.open("thread_result.txt",ios::out|ios::app);
 	QFont font;
-	font.setFamily("D2coding");
-	font.setPointSize(13);
-	
+	font.setFamily(QString::fromUtf8("\353\247\221\354\235\200 \352\263\240\353\224\225"));
+	font.setPointSize(11);
+	font.setBold(false);
 	for (int i = 0; i < 7; i++)
 	{
-		if (dataThread[i]->htmlLoadName == "코스피" || dataThread[i]->htmlLoadName == "코스닥")
+		if (dataThread[i]->htmlLoadName == "코스피 지수" || dataThread[i]->htmlLoadName == "코스닥 지수")
 			dataThread[i]->KOSPI_KOSDAQ_Parser(dataThread[i]->htmlLoadName);
 		else
 			dataThread[i]->stock_Parser(dataThread[i]->htmlLoadName);
@@ -134,9 +136,9 @@ void MainWindow::on_thread_finish(const int _cnt)
 			ofs << dataThread[i]->tmp_info["현재가"] << " : " << dataThread[i]->info["현재가"] << "\n";
 			if (dataThread[i]->flag < 0)
 			{
-				info[i].currentPrice->setStyleSheet("color:blue");
-				info[i].yesterdayPrice->setStyleSheet("color:blue");
-				info[i].exchangeRate->setStyleSheet("color:blue");
+				info[i].currentPrice->setStyleSheet("color:rgb(000,102,255)");
+				info[i].yesterdayPrice->setStyleSheet("color:rgb(000,102,255)");
+				info[i].exchangeRate->setStyleSheet("color:rgb(000,102,255)");
 			}
 			info[i].stockName->setText(qstr(dataThread[i]->htmlLoadName));
 			info[i].tradingVol->setText(qstr(dataThread[i]->info["거래량"]));

@@ -74,35 +74,43 @@ void stockInfo::setTxt(QString saveName)
 // 메인 윈도우에 주식 정보 넣는 라벨 초기화 함수
 void stockInfo::stockSetup(QGroupBox *stock, QString txtcolor, int cnt)
 {
-	stock->setGeometry(QRect(0, 32 + 51 * (cnt), 330, 51));
+	stock->setGeometry(QRect(0, 32 + 51 * (cnt), 318, 51));
 
 	QFont font;
-	font.setFamily("D2coding");
+	font.setFamily(QString::fromUtf8("\353\247\221\354\235\200 \352\263\240\353\224\225"));
 
 	font.setPointSize(10);
+
+	stockName = new QCommandLinkButton(stock);
+	stockName->setStyleSheet("border: none ; background:rgb(255,255,255)");
+	stockName->setGeometry(QRect(0, 3, 350, 61));
+	//stockName->setFont(font);
+	//stockName->setFocusPolicy(Qt::StrongFocus);
+	stockName->setIconSize(QSize(0, 0));
+
 	tradingVol = new QLabel(stock);
-	tradingVol->setGeometry(QRect(160, 24, 91, 20));
+	tradingVol->setGeometry(QRect(150, 24, 80, 20));
 	tradingVol->setFont(font);
 	tradingVol->setAlignment(Qt::AlignRight | Qt::AlignTrailing | Qt::AlignVCenter);
 
 	yesterdayPrice = new QLabel(stock);
-	yesterdayPrice->setGeometry(QRect(220, 24, 91, 20));
+	yesterdayPrice->setGeometry(QRect(220, 24, 80, 20));
 	yesterdayPrice->setFont(font);
 	yesterdayPrice->setAlignment(Qt::AlignRight | Qt::AlignTrailing | Qt::AlignVCenter);
 	yesterdayPrice->setStyleSheet(txtcolor);
 
 	exchangeRate = new QLabel(stock);
-	exchangeRate->setGeometry(QRect(220, 7, 91, 20));
+	exchangeRate->setGeometry(QRect(220, 7, 80, 20));
 	exchangeRate->setFont(font);
 	exchangeRate->setAlignment(Qt::AlignRight | Qt::AlignTrailing | Qt::AlignVCenter);
 	exchangeRate->setStyleSheet(txtcolor);
 
-	font.setPointSize(13);
+	font.setPointSize(12);
 	font.setBold(true);
 	font.setWeight(75);
 
 	currentPrice = new QLabel(stock);
-	currentPrice->setGeometry(QRect(160, 7, 91, 20));
+	currentPrice->setGeometry(QRect(150, 7, 80, 20));
 	currentPrice->setFont(font);
 	currentPrice->setAlignment(Qt::AlignRight | Qt::AlignTrailing | Qt::AlignVCenter);
 	currentPrice->setFocusPolicy(Qt::StrongFocus);
@@ -110,9 +118,9 @@ void stockInfo::stockSetup(QGroupBox *stock, QString txtcolor, int cnt)
 
 
 	stockName = new QCommandLinkButton(stock);
-
-	stockName->setGeometry(QRect(0, 3, 361, 61));
-	stockName->setFont(font);
+	stockName->setStyleSheet("border: none");
+	stockName->setGeometry(QRect(0, 3, 350, 61));
+	//stockName->setFont(font);
 	//stockName->setFocusPolicy(Qt::StrongFocus);
 	stockName->setIconSize(QSize(0, 0));
 }

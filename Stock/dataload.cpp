@@ -153,9 +153,9 @@ void dataload::stock_Parser(std::string _filename)
 			idx = line.find(" ", idx2 + 3);
 			idx2 = line.find_last_of(" ");
 			if (line.find("¸¶ÀÌ³Ê½º") != -1)
-				sign = "¡å" + line.substr(idx+1, idx2 - idx-1) + "%";
+				sign = "¡å  " + line.substr(idx+1, idx2 - idx-1) + "%";
 			else
-				sign = "¡ã" + line.substr(idx+1, idx2 - idx-1) + "%";
+				sign = "¡ã  " + line.substr(idx+1, idx2 - idx-1) + "%";
 			info["µî¶ô·ü"] = sign;
 
 		}
@@ -256,9 +256,9 @@ void dataload::KOSPI_KOSDAQ_Parser(std::string _filename)
 			//std::string st = line.substr(idx, idx2 - idx);
 			
 			if (rate == "-")
-				info["µî¶ô·ü"] = "¡å" + line.substr(idx, idx2 - idx); // O
+				info["µî¶ô·ü"] = "¡å  " + line.substr(idx, idx2 - idx); // O
 			else
-				info["µî¶ô·ü"] = "¡ã" + line.substr(idx, idx2 - idx); // 
+				info["µî¶ô·ü"] = "¡ã  " + line.substr(idx, idx2 - idx); // 
 
 
 		}
