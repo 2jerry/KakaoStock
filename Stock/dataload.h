@@ -32,6 +32,7 @@ public:
 	time_t cur_time;
 	struct tm *cur_tm;
 	int flag;
+	int idx = 0;
 	std::string htmlLoadName;
 	std::map<std::string, std::string> stockName = \
 	{ {"코스피 지수","KOSPI"},{"코스닥 지수","KOSDAQ"},{"삼성전자","005930"},\

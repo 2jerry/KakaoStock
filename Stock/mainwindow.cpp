@@ -6,6 +6,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <QPainter>
 #include "QSignalMapper"
 
 QString qstr(std::string _str)
@@ -30,7 +31,7 @@ MainWindow::MainWindow(QWidget *parent) :
 		signalMapper->setMapping(ui->btn[i], i);
 		QObject::connect(signalMapper, SIGNAL(mapped(int)), this, SLOT(on_bnt_clicked(int)));
 	}
-	for (int i = 0; i<7; i++)
+	for (int i = 0; i < 7; i++)
 	{
 		dataThread[i] = new dataload(stockName[i]);
 		connect(dataThread[i], SIGNAL(FinishCount(int)), this, SLOT(on_thread_finish(int)));
@@ -47,7 +48,7 @@ MainWindow::MainWindow(QWidget *parent) :
 	add.info[i].stockSetup(add.info[i].stock, "color:red;", i);
 	}
 	*/
-	//m_timer->start();
+	m_timer->start(500);
 }
 
 MainWindow::~MainWindow()
@@ -64,8 +65,10 @@ void MainWindow::set_window()
 		//info[i].stock->setStyleSheet("background:rgb(255,255,255)");
 		info[i].stockSetup(info[i].stock, "color:rgb(204,0,0);", i);
 		//info[i].stock->setStyleSheet("border: none");
+		
 	}
-
+	height = info[0].tradingVol->height();
+	width = info[0].tradingVol->width();
 	// 주식 정보 출력
 	int chk = -1;
 	ifstream ifs;
@@ -83,10 +86,8 @@ void MainWindow::set_window()
 		//info[i].stockName->setText(saveName[i]);
 
 	}
-	
+
 }
-
-
 
 /* --- event function --- */
 void MainWindow::on_bnt_clicked(int i)
@@ -106,75 +107,91 @@ void MainWindow::on_bnt_clicked(int i)
 	// ui->btn[i]->setText(QString("%1 ").arg(i) + "button");
 }
 
-void MainWindow::on_thread_finish(const int _cnt)
+void MainWindow::on_thread_finish(const int _idx)
 {
 	std::ofstream ofs;
-	ofs.open("thread_result.txt",ios::out|ios::app);
+	ofs.open("thread_result.txt", ios::out | ios::app);
 	QFont font;
 	font.setFamily(QString::fromUtf8("\353\247\221\354\235\200 \352\263\240\353\224\225"));
 	font.setPointSize(11);
 	font.setBold(false);
-	for (int i = 0; i < 7; i++)
+
+	
+
+
+	ofs << "thread " <<_idx<<" "<< dataThread[_idx]->htmlLoadName << "is finished.\n";
+
+	//if (dataThread[_idx]->htmlLoadName == "코스피 지수" || dataThread[_idx]->htmlLoadName == "코스닥 지수")
+	//	dataThread[_idx]->KOSPI_KOSDAQ_Parser(dataThread[_idx]->htmlLoadName);
+	//else
+	//	dataThread[_idx]->stock_Parser(dataThread[_idx]->htmlLoadName);
+	/*info[_idx].tradingVol->setText("");
+	info[_idx].yesterdayPrice->setText("");
+	info[_idx].currentPrice->setText("");
+	info[_idx].exchangeRate->setText("");*/
+	x = info[_idx].tradingVol->x();
+	y = info[_idx].tradingVol->y();
+	if (dataThread[_idx]->isFinished() == false)
+		return;
+	if (dataThread[_idx]->isRunning() == true)
+		return;
+	if (tmp_trade[_idx] != dataThread[_idx]->info["거래량"] || tmp_cur[_idx] != dataThread[_idx]->info["현재가"])
 	{
-		if (dataThread[i]->htmlLoadName == "코스피 지수" || dataThread[i]->htmlLoadName == "코스닥 지수")
-			dataThread[i]->KOSPI_KOSDAQ_Parser(dataThread[i]->htmlLoadName);
-		else
-			dataThread[i]->stock_Parser(dataThread[i]->htmlLoadName);
-		/*info[i].tradingVol->setText("");
-		info[i].yesterdayPrice->setText("");
-		info[i].currentPrice->setText("");
-		info[i].exchangeRate->setText("");*/
-
-		if (dataThread[i]->isFinished() == false)
-			return;
-		if (dataThread[i]->isRunning() == true)
-			return;
-		if (dataThread[i]->tmp_info["거래량"] != dataThread[i]->info["거래량"] || dataThread[i]->tmp_info["현재가"] != dataThread[i]->info["현재가"])
+		
+		
+		ofs << tmp_trade[_idx] << " : " << dataThread[_idx]->info["거래량"] << "\n";
+		ofs << tmp_cur[_idx] << " : " << dataThread[_idx]->info["현재가"] << "\n";
+		if (dataThread[_idx]->flag < 0)
 		{
-			ofs << "thread " << dataThread[i]->htmlLoadName << "is finished.\n";
-			ofs << dataThread[i]->tmp_info["거래량"] << " : " << dataThread[i]->info["거래량"] << "\n";
-			ofs << dataThread[i]->tmp_info["현재가"] << " : " << dataThread[i]->info["현재가"] << "\n";
-			if (dataThread[i]->flag < 0)
-			{
-				info[i].currentPrice->setStyleSheet("color:rgb(000,102,255)");
-				info[i].yesterdayPrice->setStyleSheet("color:rgb(000,102,255)");
-				info[i].exchangeRate->setStyleSheet("color:rgb(000,102,255)");
-			}
-			info[i].stockName->setText(qstr(dataThread[i]->htmlLoadName));
-			info[i].tradingVol->setText(qstr(dataThread[i]->info["거래량"]));
-			info[i].yesterdayPrice->setText(qstr(dataThread[i]->info["전일비"]));
-			info[i].currentPrice->setText(qstr(dataThread[i]->info["현재가"]));
-			info[i].exchangeRate->setText(qstr(dataThread[i]->info["등락률"]));
+			info[_idx].currentPrice->setStyleSheet("color:rgb(000,102,255)");
+			info[_idx].yesterdayPrice->setStyleSheet("color:rgb(000,102,255)");
+			info[_idx].exchangeRate->setStyleSheet("color:rgb(000,102,255)");
 		}
-		else
-		{
-			//
-		}
-		
-		dataThread[i]->tmp_info["거래량"] = dataThread[i]->info["거래량"];
-		dataThread[i]->tmp_info["현재가"] = dataThread[i]->info["현재가"];
-		/* 쓰레드로 불러온 주식 */
-		
-		info[i].stockName->setFont(font);
-		
-		
+		info[_idx].stockName->setText(qstr(dataThread[_idx]->htmlLoadName));
+		info[_idx].tradingVol->setText(qstr(dataThread[_idx]->info["거래량"]));
+		info[_idx].yesterdayPrice->setText(qstr(dataThread[_idx]->info["전일비"]));
+		info[_idx].currentPrice->setText(qstr(dataThread[_idx]->info["현재가"]));
+		info[_idx].exchangeRate->setText(qstr(dataThread[_idx]->info["등락률"]));
+	}
+	else
+	{
+		return;
+	}
 
-	/*	for (auto j = dataThread[i]->info.begin(); j != dataThread[i]->info.end(); ++j)
+	tmp_trade[_idx] = dataThread[_idx]->info["거래량"];
+	tmp_cur[_idx] = dataThread[_idx]->info["현재가"];
+	/* 쓰레드로 불러온 주식 */
+
+	info[_idx].stockName->setFont(font);
+
+
+
+	/*	for (auto j = dataThread[_idx]->info.begin(); j != dataThread[_idx]->info.end(); ++j)
 		{
 
 
 			ofs << j->first << " : " << j->second << "\n";
 		}*/
 
-	}
 	ofs.close();
+	this->update();
 }
 
 void MainWindow::on_timer_count()
 {
 
 	for (int i = 0; i < 7; i++)
+	{
 		dataThread[i]->start(); // 쓰레드 시작
-	
-	
+		dataThread[i]->idx = i;
+	}
+
+}
+
+void MainWindow::paintEvent(QPaintEvent *event)
+{
+	Q_UNUSED(event);
+	QPainter paint(this);
+	//paint.drawRect(x, y, width, height);
+	paint.end();
 }

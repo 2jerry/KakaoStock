@@ -92,6 +92,8 @@ void stockInfo::stockSetup(QGroupBox *stock, QString txtcolor, int cnt)
 	tradingVol->setGeometry(QRect(150, 24, 80, 20));
 	tradingVol->setFont(font);
 	tradingVol->setAlignment(Qt::AlignRight | Qt::AlignTrailing | Qt::AlignVCenter);
+	tradingVol->setStyleSheet("color:rgb(102,102,102)");
+
 
 	yesterdayPrice = new QLabel(stock);
 	yesterdayPrice->setGeometry(QRect(220, 24, 80, 20));

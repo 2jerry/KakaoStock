@@ -64,8 +64,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
-    <IncludePath>C:\Users\LEE JAY\Desktop\ESDL\KakaoStock\Stock\packages\cpprestsdk.v140.windesktop.msvcstl.dyn.rt-dyn.2.9.1\build\native\include;C:\Users\LEE JAY\Desktop\ESDL\KakaoStock\Stock\packages\cpprestsdk.v140.windesktop.msvcstl.dyn.rt-dyn.2.9.1\lib;$(IncludePath)</IncludePath>
-    <ReferencePath>C:\Users\LEE JAY\Desktop\ESDL\KakaoStock\Stock\packages\cpprestsdk.v140.windesktop.msvcstl.dyn.rt-dyn.2.9.1\build\native\include;$(ReferencePath)</ReferencePath>
+    <IncludePath>E:\KakaoStock\Stock\packages\cpprestsdk.v140.windesktop.msvcstl.dyn.rt-dyn.2.9.1\build\native\include;C:\Users\LEE JAY\Desktop\ESDL\KakaoStock\Stock\packages\cpprestsdk.v140.windesktop.msvcstl.dyn.rt-dyn.2.9.1\lib;$(IncludePath)</IncludePath>
+    <ReferencePath>E:\KakaoStock\Stock\packages\cpprestsdk.v140.windesktop.msvcstl.dyn.rt-dyn.2.9.1\build\native\include;$(ReferencePath)</ReferencePath>
     <LibraryPath>C:\Users\LEE JAY\Desktop\ESDL\project_final\Qt_project\packages\cpprestsdk.v140.windesktop.msvcstl.dyn.rt-dyn.2.9.1\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">

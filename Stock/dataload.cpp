@@ -77,14 +77,14 @@ void dataload::run()
 	cur_time = time(NULL);
 	cur_tm = localtime(&cur_time);
 	
-	/*if (htmlLoadName == "코스피" || htmlLoadName == "코스닥")
+	if (htmlLoadName == "코스피 지수" || htmlLoadName == "코스닥 지수")
 		KOSPI_KOSDAQ_Parser(htmlLoadName);
 	else
-		stock_Parser(htmlLoadName);*/
+		stock_Parser(htmlLoadName);
 
 	//infoParser(htmlLoadName);
 
-	emit FinishCount(cnt);
+	emit FinishCount(idx);
 	//emit FinishCount(info);
 
 }
@@ -92,12 +92,12 @@ void dataload::run()
 void dataload::stock_Parser(std::string _filename)
 {
 	std::locale::global(std::locale("kor")); // encoding
-	//std::ofstream ofs;
+	std::ofstream ofs;
 	std::string filename = _filename + ".txt";
 	int idx = 0, idx2 = 0;
 	std::string sign,line,rate;
 
-	//ofs.open(filename, std::ios::out | std::ios::app);
+	ofs.open(filename, std::ios::out | std::ios::app);
 	//ofs.open(filename);
 
 	std::ifstream ifs(stockName[htmlLoadName]+".html"); // 한글을 읽기 위해 wifstream 사용
@@ -105,9 +105,9 @@ void dataload::stock_Parser(std::string _filename)
 		new std::codecvt_utf8<wchar_t, 0x10ffff, \
 		std::consume_header>));
 	//ofs << filename + "\n";
-	/*ofs << "\n\n2018" << "." << cur_tm->tm_mon+1 << "." << cur_tm->tm_mday << " ";
+	ofs << "\n\n2018" << "." << cur_tm->tm_mon+1 << "." << cur_tm->tm_mday << " ";
 	ofs << cur_tm->tm_hour << ":" << cur_tm->tm_min << ":" << cur_tm->tm_sec << " ";
-*/
+
 	while (getline(ifs, line))
 	{
 		if (line.find("<dl class=\"blind\">") != -1)
@@ -175,21 +175,23 @@ void dataload::stock_Parser(std::string _filename)
 
 	}
 
-	//for (auto i = info.begin(); i != info.end(); ++i)
-	//{
-	//	//ofs << i->first << " : " << i->second << "\n";
-	//	ofs << i->second << "\n";
-	//}
-	//ofs.close();
+	for (auto i = info.begin(); i != info.end(); ++i)
+	{
+		ofs << i->first << " : " << i->second << "\n";
+		ofs << i->second << "\n";
+	}
+	ofs.close();
 	ifs.close();
 
 }
 
 void dataload::KOSPI_KOSDAQ_Parser(std::string _filename)
 {	
-	//std::ofstream ofs;
+	std::locale::global(std::locale("kor")); // encoding
+
+	std::ofstream ofs;
 	std::string filename = _filename + ".txt";
-	//ofs.open(filename, std::ios::out | std::ios::app);
+	ofs.open(filename, std::ios::out | std::ios::app);
 	
 	std::string line,rate;
 	int cnt = 0;
@@ -197,14 +199,13 @@ void dataload::KOSPI_KOSDAQ_Parser(std::string _filename)
 	int info_idx = 0;
 	
 	//ofs.open(filename);
-	std::locale::global(std::locale("kor")); // encoding
-	std::ifstream ifs(stockName[htmlLoadName] + ".html"); // 한글을 읽기 위해 wifstream 사용
+	ofs << filename << "\n";
+		std::ifstream ifs(stockName[htmlLoadName] + ".html"); // 한글을 읽기 위해 wifstream 사용
 	ifs.imbue(std::locale(std::locale::empty(), \
 		new std::codecvt_utf8<wchar_t, 0x10ffff, \
 		std::consume_header>));
-	//ofs << filename + "\n";
-	//ofs <<"\n\n2018" <<"."<< cur_tm->tm_mon << "." << cur_tm->tm_mday << " ";
-	//ofs << cur_tm->tm_hour << ":" << cur_tm->tm_min << ":" << cur_tm->tm_sec << " " ;
+	ofs <<"\n\n2018" <<"."<< cur_tm->tm_mon << "." << cur_tm->tm_mday << " ";
+	ofs << cur_tm->tm_hour << ":" << cur_tm->tm_min << ":" << cur_tm->tm_sec << " " ;
 
 
 	while (getline(ifs, line))
@@ -212,11 +213,11 @@ void dataload::KOSPI_KOSDAQ_Parser(std::string _filename)
 	/*	if (line.find("<span id=\"time\">") != -1)
 		{
 			if (line.find("장중") != -1)
-				flag = "장중";
+				flag2 = "장중";
 			else
-				flag = "장마감";
+				flag2 = "장마감";
 
-			ofs << flag + "\n";
+			ofs << flag2 + "\n";
 		}*/
 		if (line.find("<div class=\"subtop_sise_detail\">") != -1)
 			break;
@@ -295,14 +296,14 @@ void dataload::KOSPI_KOSDAQ_Parser(std::string _filename)
 
 		}
 	}
-/*
+
 	for (auto i = info.begin(); i != info.end(); ++i)
 	{
-		//ofs << i->first << " : " << i->second << "\n";
-		//ofs<< i->second << "\n";
-	}*/
-	//ofs << "\n\n";
-	//ofs.close();
+		ofs << i->first << " : " << i->second << "\n";
+		ofs << i->second << "\n";
+	}
+	ofs << "\n\n";
+	ofs.close();
 	ifs.close();
 
 }
