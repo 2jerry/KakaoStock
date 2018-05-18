@@ -1,723 +1,564 @@
-thread 1 코스닥 지수is finished.
- : 1,192,153
- : 850.29
-thread 0 코스피 지수is finished.
- : 658,999
- : 2,459.82
-thread 2 삼성전자is finished.
- : 15,162,294
- : 49,850
-thread 5 KODEX 인버스is finished.
- : 5,777,774
- : 6,120
-thread 4 KODEX 레버리지is finished.
- : 7,144,306
- : 16,535
-thread 6 셀트리온is finished.
- : 1,088,297
- : 268,500
-thread 3 삼성바이오로직스is finished.
- : 724,926
- : 414,000
-thread 0 코스피 지수is finished.
-thread 1 코스닥 지수is finished.
-thread 4 KODEX 레버리지is finished.
-thread 5 KODEX 인버스is finished.
-thread 2 삼성전자is finished.
-thread 0 코스피 지수is finished.
-thread 1 코스닥 지수is finished.
-thread 5 KODEX 인버스is finished.
-thread 4 KODEX 레버리지is finished.
-thread 3 삼성바이오로직스is finished.
-thread 2 삼성전자is finished.
-thread 6 셀트리온is finished.
-thread 1 코스닥 지수is finished.
-thread 0 코스피 지수is finished.
-thread 5 KODEX 인버스is finished.
-thread 4 KODEX 레버리지is finished.
-thread 1 코스닥 지수is finished.
-thread 0 코스피 지수is finished.
-thread 3 삼성바이오로직스is finished.
-thread 5 KODEX 인버스is finished.
-thread 4 KODEX 레버리지is finished.
-thread 2 삼성전자is finished.
-thread 6 셀트리온is finished.
-thread 1 코스닥 지수is finished.
-thread 0 코스피 지수is finished.
-thread 3 삼성바이오로직스is finished.
-thread 2 삼성전자is finished.
-thread 4 KODEX 레버리지is finished.
-thread 5 KODEX 인버스is finished.
-thread 1 코스닥 지수is finished.
-thread 0 코스피 지수is finished.
-thread 3 삼성바이오로직스is finished.
-thread 4 KODEX 레버리지is finished.
-thread 5 KODEX 인버스is finished.
-thread 6 셀트리온is finished.
-thread 2 삼성전자is finished.
-thread 0 코스피 지수is finished.
-thread 1 코스닥 지수is finished.
-thread 4 KODEX 레버리지is finished.
-thread 6 셀트리온is finished.
-thread 3 삼성바이오로직스is finished.
-thread 0 코스피 지수is finished.
-thread 5 KODEX 인버스is finished.
-thread 6 셀트리온is finished.
-thread 2 삼성전자is finished.
-thread 4 KODEX 레버리지is finished.
-thread 1 코스닥 지수is finished.
-thread 0 코스피 지수is finished.
-thread 4 KODEX 레버리지is finished.
-thread 3 삼성바이오로직스is finished.
-thread 2 삼성전자is finished.
-thread 5 KODEX 인버스is finished.
-thread 6 셀트리온is finished.
-thread 0 코스피 지수is finished.
-thread 1 코스닥 지수is finished.
-thread 5 KODEX 인버스is finished.
-thread 2 삼성전자is finished.
-thread 4 KODEX 레버리지is finished.
-thread 3 삼성바이오로직스is finished.
-thread 0 코스피 지수is finished.
-thread 1 코스닥 지수is finished.
-thread 6 셀트리온is finished.
-thread 5 KODEX 인버스is finished.
-thread 2 삼성전자is finished.
-thread 4 KODEX 레버리지is finished.
-thread 3 삼성바이오로직스is finished.
-thread 0 코스피 지수is finished.
-thread 1 코스닥 지수is finished.
-thread 5 KODEX 인버스is finished.
-thread 4 KODEX 레버리지is finished.
-thread 6 셀트리온is finished.
-thread 3 삼성바이오로직스is finished.
-thread 2 삼성전자is finished.
-thread 0 코스피 지수is finished.
-thread 1 코스닥 지수is finished.
-thread 3 삼성바이오로직스is finished.
-thread 2 삼성전자is finished.
-thread 5 KODEX 인버스is finished.
-thread 4 KODEX 레버리지is finished.
-thread 6 셀트리온is finished.
-thread 0 코스피 지수is finished.
-thread 1 코스닥 지수is finished.
-thread 0 코스피 지수is finished.
-thread 3 삼성바이오로직스is finished.
-thread 2 삼성전자is finished.
-thread 5 KODEX 인버스is finished.
-thread 6 셀트리온is finished.
-thread 4 KODEX 레버리지is finished.
-thread 0 코스피 지수is finished.
-thread 1 코스닥 지수is finished.
-thread 5 KODEX 인버스is finished.
-thread 3 삼성바이오로직스is finished.
-thread 4 KODEX 레버리지is finished.
-thread 6 셀트리온is finished.
-thread 2 삼성전자is finished.
-thread 0 코스피 지수is finished.
-thread 1 코스닥 지수is finished.
-thread 4 KODEX 레버리지is finished.
-thread 5 KODEX 인버스is finished.
-thread 6 셀트리온is finished.
-thread 3 삼성바이오로직스is finished.
-thread 2 삼성전자is finished.
-thread 1 코스닥 지수is finished.
-thread 0 코스피 지수is finished.
-thread 5 KODEX 인버스is finished.
-thread 3 삼성바이오로직스is finished.
-thread 4 KODEX 레버리지is finished.
-thread 6 셀트리온is finished.
-thread 1 코스닥 지수is finished.
-thread 0 코스피 지수is finished.
-thread 5 KODEX 인버스is finished.
-thread 4 KODEX 레버리지is finished.
-thread 3 삼성바이오로직스is finished.
-thread 6 셀트리온is finished.
-thread 2 삼성전자is finished.
-thread 0 코스피 지수is finished.
-thread 1 코스닥 지수is finished.
-thread 3 삼성바이오로직스is finished.
-thread 5 KODEX 인버스is finished.
-thread 4 KODEX 레버리지is finished.
-thread 1 코스닥 지수is finished.
-thread 0 코스피 지수is finished.
-thread 4 KODEX 레버리지is finished.
-thread 5 KODEX 인버스is finished.
-thread 6 셀트리온is finished.
-thread 2 삼성전자is finished.
-thread 3 삼성바이오로직스is finished.
-thread 1 코스닥 지수is finished.
-thread 0 코스피 지수is finished.
-thread 2 삼성전자is finished.
-thread 6 셀트리온is finished.
-thread 5 KODEX 인버스is finished.
-thread 4 KODEX 레버리지is finished.
-thread 1 코스닥 지수is finished.
-thread 0 코스피 지수is finished.
-thread 5 KODEX 인버스is finished.
-thread 3 삼성바이오로직스is finished.
-thread 2 삼성전자is finished.
-thread 4 KODEX 레버리지is finished.
-thread 6 셀트리온is finished.
-thread 1 코스닥 지수is finished.
-thread 0 코스피 지수is finished.
-thread 3 삼성바이오로직스is finished.
-thread 5 KODEX 인버스is finished.
-thread 2 삼성전자is finished.
-thread 4 KODEX 레버리지is finished.
-thread 1 코스닥 지수is finished.
-thread 0 코스피 지수is finished.
-thread 1 코스닥 지수is finished.
- : 1,192,153
- : 850.29
-thread 0 코스피 지수is finished.
- : 658,999
- : 2,459.82
-thread 5 KODEX 인버스is finished.
- : 5,780,019
- : 6,120
-thread 6 셀트리온is finished.
- : 1,088,936
- : 268,500
-thread 2 삼성전자is finished.
- : 15,199,267
- : 49,850
-thread 3 삼성바이오로직스is finished.
- : 724,926
- : 414,000
-thread 4 KODEX 레버리지is finished.
- : 7,148,293
- : 16,535
-thread 0 코스피 지수is finished.
-thread 1 코스닥 지수is finished.
-thread 5 KODEX 인버스is finished.
-thread 0 코스피 지수is finished.
-thread 1 코스닥 지수is finished.
-thread 3 삼성바이오로직스is finished.
-thread 5 KODEX 인버스is finished.
-thread 4 KODEX 레버리지is finished.
-thread 2 삼성전자is finished.
-thread 6 셀트리온is finished.
-thread 0 코스피 지수is finished.
-thread 1 코스닥 지수is finished.
-thread 5 KODEX 인버스is finished.
-thread 4 KODEX 레버리지is finished.
-thread 3 삼성바이오로직스is finished.
-thread 0 코스피 지수is finished.
-thread 1 코스닥 지수is finished.
-thread 6 셀트리온is finished.
-thread 3 삼성바이오로직스is finished.
-thread 2 삼성전자is finished.
-thread 4 KODEX 레버리지is finished.
-thread 5 KODEX 인버스is finished.
-thread 1 코스닥 지수is finished.
-thread 0 코스피 지수is finished.
-thread 6 셀트리온is finished.
-thread 3 삼성바이오로직스is finished.
-thread 0 코스피 지수is finished.
-thread 1 코스닥 지수is finished.
-thread 5 KODEX 인버스is finished.
-thread 2 삼성전자is finished.
-thread 4 KODEX 레버리지is finished.
-thread 3 삼성바이오로직스is finished.
-thread 6 셀트리온is finished.
-thread 1 코스닥 지수is finished.
-thread 0 코스피 지수is finished.
-thread 5 KODEX 인버스is finished.
-thread 2 삼성전자is finished.
-thread 1 코스닥 지수is finished.
-thread 0 코스피 지수is finished.
-thread 4 KODEX 레버리지is finished.
-thread 5 KODEX 인버스is finished.
-thread 2 삼성전자is finished.
-thread 6 셀트리온is finished.
-thread 3 삼성바이오로직스is finished.
-thread 1 코스닥 지수is finished.
-thread 0 코스피 지수is finished.
-thread 0 코스피 지수is finished.
- : 658,999
- : 2,459.82
-thread 1 코스닥 지수is finished.
- : 1,192,153
- : 850.29
-thread 5 KODEX 인버스is finished.
- : 5,780,019
- : 6,120
-thread 2 삼성전자is finished.
- : 15,201,719
- : 49,850
-thread 4 KODEX 레버리지is finished.
- : 7,148,295
- : 16,535
-thread 6 셀트리온is finished.
- : 1,089,067
- : 268,500
-thread 3 삼성바이오로직스is finished.
- : 726,133
- : 414,000
-thread 1 코스닥 지수is finished.
-thread 0 코스피 지수is finished.
-thread 5 KODEX 인버스is finished.
-thread 0 코스피 지수is finished.
-thread 1 코스닥 지수is finished.
-thread 3 삼성바이오로직스is finished.
-thread 5 KODEX 인버스is finished.
-thread 4 KODEX 레버리지is finished.
-thread 6 셀트리온is finished.
-thread 2 삼성전자is finished.
-thread 0 코스피 지수is finished.
-thread 3 삼성바이오로직스is finished.
-thread 5 KODEX 인버스is finished.
-thread 4 KODEX 레버리지is finished.
-thread 6 셀트리온is finished.
-thread 1 코스닥 지수is finished.
-thread 0 코스피 지수is finished.
-thread 5 KODEX 인버스is finished.
-thread 3 삼성바이오로직스is finished.
-thread 4 KODEX 레버리지is finished.
-thread 2 삼성전자is finished.
-thread 0 코스피 지수is finished.
-thread 1 코스닥 지수is finished.
-thread 6 셀트리온is finished.
-thread 5 KODEX 인버스is finished.
-thread 4 KODEX 레버리지is finished.
-thread 3 삼성바이오로직스is finished.
-thread 2 삼성전자is finished.
-thread 0 코스피 지수is finished.
-thread 1 코스닥 지수is finished.
-thread 5 KODEX 인버스is finished.
-thread 6 셀트리온is finished.
-thread 0 코스피 지수is finished.
-thread 1 코스닥 지수is finished.
-thread 1 코스닥 지수is finished.
- : 1,192,153
- : 850.29
-thread 0 코스피 지수is finished.
- : 658,999
- : 2,459.82
-thread 6 셀트리온is finished.
- : 1,089,067
- : 268,500
-thread 5 KODEX 인버스is finished.
- : 5,780,019
- : 6,120
-thread 3 삼성바이오로직스is finished.
- : 726,219
- : 414,000
-thread 2 삼성전자is finished.
- : 15,206,126
- : 49,850
-thread 4 KODEX 레버리지is finished.
- : 7,148,296
- : 16,535
-thread 1 코스닥 지수is finished.
-thread 0 코스피 지수is finished.
-thread 6 셀트리온is finished.
-thread 1 코스닥 지수is finished.
-thread 0 코스피 지수is finished.
-thread 6 셀트리온is finished.
-thread 2 삼성전자is finished.
-thread 5 KODEX 인버스is finished.
-thread 4 KODEX 레버리지is finished.
-thread 3 삼성바이오로직스is finished.
-thread 0 코스피 지수is finished.
-thread 1 코스닥 지수is finished.
-thread 5 KODEX 인버스is finished.
-thread 2 삼성전자is finished.
-thread 4 KODEX 레버리지is finished.
-thread 6 셀트리온is finished.
-thread 1 코스닥 지수is finished.
-thread 0 코스피 지수is finished.
-thread 2 삼성전자is finished.
-thread 3 삼성바이오로직스is finished.
-thread 5 KODEX 인버스is finished.
-thread 6 셀트리온is finished.
-thread 4 KODEX 레버리지is finished.
-thread 0 코스피 지수is finished.
-thread 1 코스닥 지수is finished.
-thread 0 코스피 지수is finished.
-thread 1 코스닥 지수is finished.
-thread 4 KODEX 레버리지is finished.
-thread 2 삼성전자is finished.
-thread 5 KODEX 인버스is finished.
-thread 3 삼성바이오로직스is finished.
-thread 6 셀트리온is finished.
-thread 1 코스닥 지수is finished.
-thread 0 코스피 지수is finished.
-thread 3 삼성바이오로직스is finished.
-thread 5 KODEX 인버스is finished.
-thread 2 삼성전자is finished.
-thread 4 KODEX 레버리지is finished.
-thread 6 셀트리온is finished.
-thread 0 코스피 지수is finished.
-thread 1 코스닥 지수is finished.
-thread 5 KODEX 인버스is finished.
-thread 2 삼성전자is finished.
-thread 3 삼성바이오로직스is finished.
-thread 0 코스피 지수is finished.
-thread 3 삼성바이오로직스is finished.
-thread 5 KODEX 인버스is finished.
-thread 4 KODEX 레버리지is finished.
-thread 6 셀트리온is finished.
-thread 2 삼성전자is finished.
-thread 0 코스피 지수is finished.
-thread 5 KODEX 인버스is finished.
-thread 0 코스피 지수is finished.
-thread 5 KODEX 인버스is finished.
-thread 1 코스닥 지수is finished.
-thread 2 삼성전자is finished.
-thread 4 KODEX 레버리지is finished.
-thread 6 셀트리온is finished.
-thread 3 삼성바이오로직스is finished.
-thread 0 코스피 지수is finished.
-thread 1 코스닥 지수is finished.
-thread 2 삼성전자is finished.
-thread 5 KODEX 인버스is finished.
-thread 0 코스피 지수is finished.
-thread 1 코스닥 지수is finished.
-thread 5 KODEX 인버스is finished.
-thread 6 셀트리온is finished.
-thread 3 삼성바이오로직스is finished.
-thread 4 KODEX 레버리지is finished.
-thread 2 삼성전자is finished.
-thread 1 코스닥 지수is finished.
-thread 0 코스피 지수is finished.
-thread 5 KODEX 인버스is finished.
-thread 3 삼성바이오로직스is finished.
-thread 4 KODEX 레버리지is finished.
-thread 6 셀트리온is finished.
-thread 0 코스피 지수is finished.
-thread 1 코스닥 지수is finished.
-thread 3 삼성바이오로직스is finished.
-thread 4 KODEX 레버리지is finished.
-thread 2 삼성전자is finished.
-thread 5 KODEX 인버스is finished.
-thread 6 셀트리온is finished.
-thread 1 코스닥 지수is finished.
-thread 0 코스피 지수is finished.
- : 658,999
- : 2,459.82
-thread 1 코스닥 지수is finished.
- : 1,192,153
- : 850.29
-thread 6 셀트리온is finished.
- : 1,089,342
- : 268,500
-thread 5 KODEX 인버스is finished.
- : 5,780,651
- : 6,120
-thread 4 KODEX 레버리지is finished.
- : 7,148,513
- : 16,535
-thread 3 삼성바이오로직스is finished.
- : 726,921
- : 414,000
-thread 2 삼성전자is finished.
- : 15,222,062
- : 49,850
-thread 0 코스피 지수is finished.
-thread 1 코스닥 지수is finished.
-thread 6 셀트리온is finished.
-thread 0 코스피 지수is finished.
-thread 1 코스닥 지수is finished.
-thread 2 삼성전자is finished.
-thread 5 KODEX 인버스is finished.
-thread 4 KODEX 레버리지is finished.
-thread 3 삼성바이오로직스is finished.
-726,921 : 727,018
-414,000 : 414,000
-thread 6 셀트리온is finished.
-thread 1 코스닥 지수is finished.
-thread 0 코스피 지수is finished.
-thread 2 삼성전자is finished.
-thread 5 KODEX 인버스is finished.
-thread 4 KODEX 레버리지is finished.
-thread 0 코스피 지수is finished.
-thread 1 코스닥 지수is finished.
-thread 2 삼성전자is finished.
-thread 5 KODEX 인버스is finished.
-thread 4 KODEX 레버리지is finished.
-thread 3 삼성바이오로직스is finished.
-thread 6 셀트리온is finished.
-thread 1 코스닥 지수is finished.
-thread 0 코스피 지수is finished.
-thread 2 삼성전자is finished.
-thread 0 코스피 지수is finished.
-thread 1 코스닥 지수is finished.
-thread 3 삼성바이오로직스is finished.
-thread 5 KODEX 인버스is finished.
-thread 4 KODEX 레버리지is finished.
-thread 2 삼성전자is finished.
-thread 6 셀트리온is finished.
-thread 0 코스피 지수is finished.
-thread 1 코스닥 지수is finished.
-thread 3 삼성바이오로직스is finished.
-thread 0 코스피 지수is finished.
-thread 1 코스닥 지수is finished.
-thread 3 삼성바이오로직스is finished.
-thread 2 삼성전자is finished.
-thread 5 KODEX 인버스is finished.
-thread 4 KODEX 레버리지is finished.
-thread 6 셀트리온is finished.
-thread 1 코스닥 지수is finished.
-thread 0 코스피 지수is finished.
-thread 5 KODEX 인버스is finished.
-thread 3 삼성바이오로직스is finished.
-thread 2 삼성전자is finished.
-thread 1 코스닥 지수is finished.
-thread 0 코스피 지수is finished.
-thread 2 삼성전자is finished.
-thread 6 셀트리온is finished.
-thread 4 KODEX 레버리지is finished.
-thread 5 KODEX 인버스is finished.
-thread 3 삼성바이오로직스is finished.
-thread 0 코스피 지수is finished.
-thread 1 코스닥 지수is finished.
-thread 2 삼성전자is finished.
-thread 6 셀트리온is finished.
-thread 4 KODEX 레버리지is finished.
-thread 0 코스피 지수is finished.
-thread 1 코스닥 지수is finished.
-thread 5 KODEX 인버스is finished.
-thread 3 삼성바이오로직스is finished.
-thread 2 삼성전자is finished.
-thread 4 KODEX 레버리지is finished.
-thread 6 셀트리온is finished.
-thread 1 코스닥 지수is finished.
-thread 0 코스피 지수is finished.
-thread 4 KODEX 레버리지is finished.
-thread 5 KODEX 인버스is finished.
-thread 3 삼성바이오로직스is finished.
-thread 2 삼성전자is finished.
-thread 0 코스피 지수is finished.
-thread 1 코스닥 지수is finished.
-thread 3 삼성바이오로직스is finished.
-thread 6 셀트리온is finished.
-thread 2 삼성전자is finished.
-thread 5 KODEX 인버스is finished.
-thread 4 KODEX 레버리지is finished.
-thread 0 코스피 지수is finished.
-thread 1 코스닥 지수is finished.
-thread 3 삼성바이오로직스is finished.
-thread 6 셀트리온is finished.
-thread 5 KODEX 인버스is finished.
-thread 2 삼성전자is finished.
-thread 1 코스닥 지수is finished.
-thread 0 코스피 지수is finished.
-thread 0 코스피 지수is finished.
- : 658,999
- : 2,459.82
-thread 1 코스닥 지수is finished.
- : 1,192,153
- : 850.29
-thread 4 KODEX 레버리지is finished.
- : 7,148,513
- : 16,535
-thread 2 삼성전자is finished.
- : 15,235,991
- : 49,850
-thread 5 KODEX 인버스is finished.
- : 5,780,651
- : 6,120
-thread 6 셀트리온is finished.
- : 1,089,342
- : 268,500
-thread 3 삼성바이오로직스is finished.
- : 727,018
- : 414,000
-thread 0 코스피 지수is finished.
-thread 1 코스닥 지수is finished.
-thread 4 KODEX 레버리지is finished.
-thread 1 코스닥 지수is finished.
-thread 0 코스피 지수is finished.
-thread 2 삼성전자is finished.
-thread 3 삼성바이오로직스is finished.
-thread 4 KODEX 레버리지is finished.
-thread 6 셀트리온is finished.
-thread 5 KODEX 인버스is finished.
-thread 0 코스피 지수is finished.
-thread 1 코스닥 지수is finished.
-thread 3 삼성바이오로직스is finished.
-thread 2 삼성전자is finished.
-thread 1 코스닥 지수is finished.
-thread 0 코스피 지수is finished.
-thread 3 삼성바이오로직스is finished.
-thread 5 KODEX 인버스is finished.
-thread 4 KODEX 레버리지is finished.
-thread 2 삼성전자is finished.
-thread 1 코스닥 지수is finished.
-thread 0 코스피 지수is finished.
-thread 5 KODEX 인버스is finished.
-thread 3 삼성바이오로직스is finished.
-thread 2 삼성전자is finished.
-thread 4 KODEX 레버리지is finished.
-thread 0 코스피 지수is finished.
-thread 1 코스닥 지수is finished.
-thread 3 삼성바이오로직스is finished.
-thread 5 KODEX 인버스is finished.
-thread 2 삼성전자is finished.
-thread 6 셀트리온is finished.
-thread 1 코스닥 지수is finished.
-thread 0 코스피 지수is finished.
-thread 3 삼성바이오로직스is finished.
-thread 5 KODEX 인버스is finished.
-thread 2 삼성전자is finished.
-thread 6 셀트리온is finished.
-thread 4 KODEX 레버리지is finished.
-thread 0 코스피 지수is finished.
-thread 1 코스닥 지수is finished.
-thread 5 KODEX 인버스is finished.
-thread 6 셀트리온is finished.
-thread 3 삼성바이오로직스is finished.
-thread 2 삼성전자is finished.
-thread 1 코스닥 지수is finished.
-thread 0 코스피 지수is finished.
-thread 3 삼성바이오로직스is finished.
-thread 5 KODEX 인버스is finished.
-thread 6 셀트리온is finished.
-thread 4 KODEX 레버리지is finished.
-thread 2 삼성전자is finished.
-thread 0 코스피 지수is finished.
-thread 1 코스닥 지수is finished.
-thread 6 셀트리온is finished.
-thread 5 KODEX 인버스is finished.
-thread 4 KODEX 레버리지is finished.
-thread 3 삼성바이오로직스is finished.
-thread 2 삼성전자is finished.
-thread 1 코스닥 지수is finished.
-thread 0 코스피 지수is finished.
-thread 5 KODEX 인버스is finished.
-5,780,651 : 5,781,251
-6,120 : 6,120
-thread 4 KODEX 레버리지is finished.
-thread 3 삼성바이오로직스is finished.
-thread 6 셀트리온is finished.
-thread 0 코스피 지수is finished.
-thread 1 코스닥 지수is finished.
-thread 5 KODEX 인버스is finished.
-thread 3 삼성바이오로직스is finished.
-thread 6 셀트리온is finished.
-thread 4 KODEX 레버리지is finished.
-thread 2 삼성전자is finished.
-thread 0 코스피 지수is finished.
-thread 1 코스닥 지수is finished.
-thread 3 삼성바이오로직스is finished.
-thread 5 KODEX 인버스is finished.
-thread 6 셀트리온is finished.
-thread 4 KODEX 레버리지is finished.
-thread 0 코스피 지수is finished.
- : 658,999
- : 2,459.82
-thread 1 코스닥 지수is finished.
- : 1,192,153
- : 850.29
-thread 5 KODEX 인버스is finished.
- : 5,781,251
- : 6,120
-thread 6 셀트리온is finished.
- : 1,089,355
- : 268,500
-thread 4 KODEX 레버리지is finished.
- : 7,148,715
- : 16,535
-thread 3 삼성바이오로직스is finished.
- : 727,087
- : 414,000
-thread 2 삼성전자is finished.
- : 15,239,861
- : 49,850
-thread 1 코스닥 지수is finished.
-thread 0 코스피 지수is finished.
-thread 5 KODEX 인버스is finished.
-thread 1 코스닥 지수is finished.
-thread 0 코스피 지수is finished.
-thread 5 KODEX 인버스is finished.
-thread 3 삼성바이오로직스is finished.
-thread 2 삼성전자is finished.
-thread 4 KODEX 레버리지is finished.
-thread 6 셀트리온is finished.
-thread 0 코스피 지수is finished.
-thread 1 코스닥 지수is finished.
-thread 2 삼성전자is finished.
-thread 5 KODEX 인버스is finished.
-thread 3 삼성바이오로직스is finished.
-thread 0 코스피 지수is finished.
-thread 1 코스닥 지수is finished.
-thread 5 KODEX 인버스is finished.
-thread 4 KODEX 레버리지is finished.
-thread 2 삼성전자is finished.
-thread 3 삼성바이오로직스is finished.
-thread 6 셀트리온is finished.
-thread 0 코스피 지수is finished.
-thread 1 코스닥 지수is finished.
-thread 0 코스피 지수is finished.
-thread 1 코스닥 지수is finished.
-thread 5 KODEX 인버스is finished.
-thread 2 삼성전자is finished.
-thread 6 셀트리온is finished.
-thread 4 KODEX 레버리지is finished.
-thread 3 삼성바이오로직스is finished.
-thread 0 코스피 지수is finished.
-thread 1 코스닥 지수is finished.
-thread 5 KODEX 인버스is finished.
-thread 1 코스닥 지수is finished.
-thread 0 코스피 지수is finished.
-thread 5 KODEX 인버스is finished.
-thread 3 삼성바이오로직스is finished.
-thread 4 KODEX 레버리지is finished.
-thread 6 셀트리온is finished.
-thread 2 삼성전자is finished.
-thread 0 코스피 지수is finished.
-thread 1 코스닥 지수is finished.
-thread 5 KODEX 인버스is finished.
-thread 6 셀트리온is finished.
-thread 4 KODEX 레버리지is finished.
-thread 3 삼성바이오로직스is finished.
-thread 0 코스피 지수is finished.
-thread 1 코스닥 지수is finished.
-thread 4 KODEX 레버리지is finished.
-thread 6 셀트리온is finished.
-thread 5 KODEX 인버스is finished.
-thread 2 삼성전자is finished.
-thread 0 코스피 지수is finished.
-thread 1 코스닥 지수is finished.
-thread 5 KODEX 인버스is finished.
-thread 6 셀트리온is finished.
-thread 3 삼성바이오로직스is finished.
-thread 2 삼성전자is finished.
-thread 4 KODEX 레버리지is finished.
-thread 1 코스닥 지수is finished.
-thread 0 코스피 지수is finished.
-thread 5 KODEX 인버스is finished.
-thread 1 코스닥 지수is finished.
-thread 0 코스피 지수is finished.
-thread 5 KODEX 인버스is finished.
-thread 6 셀트리온is finished.
-thread 4 KODEX 레버리지is finished.
-thread 3 삼성바이오로직스is finished.
-thread 2 삼성전자is finished.
-thread 0 코스피 지수is finished.
-thread 1 코스닥 지수is finished.
-thread 5 KODEX 인버스is finished.
-thread 4 KODEX 레버리지is finished.
-thread 6 셀트리온is finished.
-thread 1 코스닥 지수is finished.
-thread 0 코스피 지수is finished.
-thread 4 KODEX 레버리지is finished.
-thread 5 KODEX 인버스is finished.
-thread 6 셀트리온is finished.
-thread 3 삼성바이오로직스is finished.
-thread 2 삼성전자is finished.
-thread 0 코스피 지수is finished.
-thread 1 코스닥 지수is finished.
-thread 5 KODEX 인버스is finished.
-thread 4 KODEX 레버리지is finished.
-thread 0 코스피 지수is finished.
-thread 1 코스닥 지수is finished.
-thread 5 KODEX 인버스is finished.
-thread 2 삼성전자is finished.
-15,239,861 : 15,240,261
-49,850 : 49,850
-thread 6 셀트리온is finished.
-thread 4 KODEX 레버리지is finished.
-thread 3 삼성바이오로직스is finished.
+thread 0코스피 지수is finished.
+ : 322,903
+ : 2,454.40
+thread 1코스닥 지수is finished.
+ : 792,341
+ : 865.42
+thread 5KODEX 인버스is finished.
+ : 4,139,848
+ : 6,150
+thread 4KODEX 레버리지is finished.
+ : 3,889,372
+ : 16,415
+thread 3삼성바이오로직스is finished.
+ : 548,041
+ : 409,500
+thread 6셀트리온is finished.
+ : 558,882
+ : 271,500
+thread 0코스피 지수is finished.
+322,903 : 323,647
+2,454.40 : 2,454.38
+thread 1코스닥 지수is finished.
+792,341 : 794,862
+865.42 : 865.35
+thread 2삼성전자is finished.
+ : 4,296,108
+ : 49,550
+thread 3삼성바이오로직스is finished.
+548,041 : 548,457
+409,500 : 409,500
+thread 2삼성전자is finished.
+4,296,108 : 4,355,315
+49,550 : 49,550
+thread 6셀트리온is finished.
+558,882 : 559,295
+271,500 : 272,000
+thread 4KODEX 레버리지is finished.
+3,889,372 : 3,891,351
+16,415 : 16,410
+thread 5KODEX 인버스is finished.
+4,139,848 : 4,141,376
+6,150 : 6,155
+thread 1코스닥 지수is finished.
+794,862 : 796,908
+865.35 : 865.44
+thread 0코스피 지수is finished.
+323,647 : 324,363
+2,454.38 : 2,455.36
+thread 3삼성바이오로직스is finished.
+548,457 : 549,223
+409,500 : 409,500
+thread 2삼성전자is finished.
+4,355,315 : 4,360,078
+49,550 : 49,550
+thread 5KODEX 인버스is finished.
+4,141,376 : 4,143,955
+6,155 : 6,150
+thread 4KODEX 레버리지is finished.
+3,891,351 : 3,891,419
+16,410 : 16,410
+thread 6셀트리온is finished.
+559,295 : 559,624
+272,000 : 271,500
+thread 0코스피 지수is finished.
+324,363 : 325,135
+2,455.36 : 2,454.05
+thread 1코스닥 지수is finished.
+796,908 : 798,822
+865.44 : 865.39
+thread 3삼성바이오로직스is finished.
+549,223 : 551,194
+409,500 : 408,500
+thread 2삼성전자is finished.
+4,360,078 : 4,366,682
+49,550 : 49,550
+thread 5KODEX 인버스is finished.
+4,143,955 : 4,171,534
+6,150 : 6,155
+thread 6셀트리온is finished.
+559,624 : 560,099
+271,500 : 271,500
+thread 4KODEX 레버리지is finished.
+3,891,419 : 3,904,610
+16,410 : 16,395
+thread 1코스닥 지수is finished.
+798,822 : 801,532
+865.39 : 865.36
+thread 0코스피 지수is finished.
+325,135 : 325,810
+2,454.05 : 2,455.16
+thread 3삼성바이오로직스is finished.
+551,194 : 551,764
+408,500 : 409,000
+thread 5KODEX 인버스is finished.
+4,171,534 : 4,171,553
+6,155 : 6,155
+thread 6셀트리온is finished.
+560,099 : 560,720
+271,500 : 272,000
+thread 4KODEX 레버리지is finished.
+3,904,610 : 3,907,633
+16,395 : 16,400
+thread 0코스피 지수is finished.
+325,810 : 326,668
+2,455.16 : 2,455.31
+thread 1코스닥 지수is finished.
+801,532 : 803,691
+865.36 : 865.36
+thread 2삼성전자is finished.
+4,366,682 : 4,371,269
+49,550 : 49,500
+thread 3삼성바이오로직스is finished.
+551,764 : 551,955
+409,000 : 409,000
+thread 0코스피 지수is finished.
+ : 326,668
+ : 2,455.31
+thread 1코스닥 지수is finished.
+ : 803,691
+ : 865.36
+thread 3삼성바이오로직스is finished.
+ : 551,955
+ : 409,000
+thread 4KODEX 레버리지is finished.
+ : 3,915,259
+ : 16,405
+thread 5KODEX 인버스is finished.
+ : 4,171,897
+ : 6,155
+thread 2삼성전자is finished.
+ : 4,376,797
+ : 49,550
+thread 0코스피 지수is finished.
+ : 327,315
+ : 2,454.77
+thread 1코스닥 지수is finished.
+ : 806,027
+ : 865.43
+thread 2삼성전자is finished.
+ : 4,376,797
+ : 49,550
+thread 6셀트리온is finished.
+ : 561,064
+ : 272,000
+thread 5KODEX 인버스is finished.
+ : 4,171,897
+ : 6,155
+thread 3삼성바이오로직스is finished.
+ : 552,360
+ : 409,000
+thread 4KODEX 레버리지is finished.
+ : 3,915,259
+ : 16,405
+thread 2삼성전자is finished.
+4,376,797 : 4,385,907
+49,550 : 49,500
+thread 5KODEX 인버스is finished.
+4,171,897 : 4,188,292
+6,155 : 6,155
+thread 4KODEX 레버리지is finished.
+3,915,259 : 3,922,362
+16,405 : 16,405
+thread 6셀트리온is finished.
+561,064 : 561,478
+272,000 : 272,000
+thread 0코스피 지수is finished.
+327,315 : 328,159
+2,454.77 : 2,455.30
+thread 1코스닥 지수is finished.
+806,027 : 807,629
+865.43 : 865.65
+thread 3삼성바이오로직스is finished.
+552,360 : 552,526
+409,000 : 410,000
+thread 2삼성전자is finished.
+4,385,907 : 4,392,704
+49,500 : 49,500
+thread 5KODEX 인버스is finished.
+4,188,292 : 4,198,725
+6,155 : 6,155
+thread 6셀트리온is finished.
+561,478 : 561,828
+272,000 : 272,000
+thread 1코스닥 지수is finished.
+807,629 : 810,296
+865.65 : 865.97
+thread 0코스피 지수is finished.
+328,159 : 328,775
+2,455.30 : 2,455.96
+thread 3삼성바이오로직스is finished.
+552,526 : 553,367
+410,000 : 410,000
+thread 2삼성전자is finished.
+4,392,704 : 4,397,965
+49,500 : 49,500
+thread 5KODEX 인버스is finished.
+4,198,725 : 4,199,985
+6,155 : 6,155
+thread 6셀트리온is finished.
+561,828 : 562,291
+272,000 : 271,500
+thread 4KODEX 레버리지is finished.
+3,922,362 : 3,928,506
+16,405 : 16,410
+thread 4KODEX 레버리지is finished.
+3,928,506 : 3,930,877
+16,410 : 16,415
+thread 1코스닥 지수is finished.
+810,296 : 812,684
+865.97 : 865.98
+thread 0코스피 지수is finished.
+328,775 : 329,334
+2,455.96 : 2,454.93
+thread 3삼성바이오로직스is finished.
+553,367 : 553,750
+410,000 : 411,000
+thread 6셀트리온is finished.
+562,291 : 567,460
+271,500 : 271,500
+thread 2삼성전자is finished.
+4,397,965 : 4,403,044
+49,500 : 49,550
+thread 4KODEX 레버리지is finished.
+3,930,877 : 3,942,816
+16,415 : 16,415
+thread 0코스피 지수is finished.
+329,334 : 329,940
+2,454.93 : 2,455.28
+thread 1코스닥 지수is finished.
+812,684 : 814,948
+865.98 : 865.99
+thread 5KODEX 인버스is finished.
+4,199,985 : 4,200,233
+6,155 : 6,155
+thread 3삼성바이오로직스is finished.
+553,750 : 554,101
+411,000 : 411,000
+thread 2삼성전자is finished.
+4,403,044 : 4,408,681
+49,550 : 49,500
+thread 5KODEX 인버스is finished.
+4,200,233 : 4,200,257
+6,155 : 6,155
+thread 4KODEX 레버리지is finished.
+3,942,816 : 3,944,263
+16,415 : 16,415
+thread 6셀트리온is finished.
+567,460 : 567,743
+271,500 : 271,000
+thread 0코스피 지수is finished.
+ : 366,046
+ : 2,456.88
+thread 1코스닥 지수is finished.
+ : 916,993
+ : 867.06
+thread 3삼성바이오로직스is finished.
+ : 586,708
+ : 407,500
+thread 2삼성전자is finished.
+ : 5,036,649
+ : 49,500
+thread 5KODEX 인버스is finished.
+ : 4,453,029
+ : 6,145
+thread 6셀트리온is finished.
+ : 648,386
+ : 270,000
+thread 4KODEX 레버리지is finished.
+ : 4,363,127
+ : 16,440
+thread 0코스피 지수is finished.
+ : 366,849
+ : 2,457.35
+thread 1코스닥 지수is finished.
+ : 919,295
+ : 867.30
+thread 1코스닥 지수is finished.
+ : 921,284
+ : 867.33
+thread 0코스피 지수is finished.
+ : 367,698
+ : 2,456.72
+thread 5KODEX 인버스is finished.
+ : 4,453,170
+ : 6,145
+thread 6셀트리온is finished.
+ : 649,049
+ : 270,000
+thread 4KODEX 레버리지is finished.
+ : 4,364,798
+ : 16,440
+thread 3삼성바이오로직스is finished.
+ : 587,835
+ : 408,000
+thread 2삼성전자is finished.
+ : 5,044,225
+ : 49,550
+thread 1코스닥 지수is finished.
+ : 926,277
+ : 867.37
+thread 0코스피 지수is finished.
+ : 369,410
+ : 2,457.01
+thread 4KODEX 레버리지is finished.
+ : 4,394,404
+ : 16,445
+thread 5KODEX 인버스is finished.
+ : 4,585,448
+ : 6,145
+thread 6셀트리온is finished.
+ : 652,120
+ : 270,500
+thread 3삼성바이오로직스is finished.
+ : 588,531
+ : 407,500
+thread 2삼성전자is finished.
+ : 5,075,382
+ : 49,500
+thread 1코스닥 지수is finished.
+ : 936,758
+ : 867.69
+thread 0코스피 지수is finished.
+ : 375,517
+ : 2,458.53
+thread 5KODEX 인버스is finished.
+ : 4,700,229
+ : 6,140
+thread 3삼성바이오로직스is finished.
+ : 593,813
+ : 410,000
+thread 4KODEX 레버리지is finished.
+ : 4,575,204
+ : 16,470
+thread 2삼성전자is finished.
+ : 5,279,717
+ : 49,600
+thread 6셀트리온is finished.
+ : 658,410
+ : 270,000
+thread 0코스피 지수is finished.
+ : 380,968
+ : 2,459.54
+thread 1코스닥 지수is finished.
+ : 945,961
+ : 867.61
+thread 5KODEX 인버스is finished.
+ : 4,700,651
+ : 6,140
+thread 2삼성전자is finished.
+ : 5,311,804
+ : 49,600
+thread 3삼성바이오로직스is finished.
+ : 597,142
+ : 411,000
+thread 4KODEX 레버리지is finished.
+ : 4,597,454
+ : 16,460
+thread 6셀트리온is finished.
+ : 661,402
+ : 270,000
+thread 0코스피 지수is finished.
+ : 382,601
+ : 2,459.08
+thread 5KODEX 인버스is finished.
+ : 4,710,859
+ : 6,145
+thread 1코스닥 지수is finished.
+ : 947,979
+ : 867.41
+thread 4KODEX 레버리지is finished.
+ : 4,618,227
+ : 16,455
+thread 2삼성전자is finished.
+ : 5,329,357
+ : 49,550
+thread 6셀트리온is finished.
+ : 662,555
+ : 270,000
+thread 3삼성바이오로직스is finished.
+ : 597,885
+ : 410,500
+thread 1코스닥 지수is finished.
+ : 951,872
+ : 867.35
+thread 5KODEX 인버스is finished.
+ : 4,717,971
+ : 6,145
+thread 0코스피 지수is finished.
+ : 385,111
+ : 2,458.81
+thread 2삼성전자is finished.
+ : 5,354,813
+ : 49,600
+thread 3삼성바이오로직스is finished.
+ : 598,547
+ : 410,500
+thread 4KODEX 레버리지is finished.
+ : 4,618,612
+ : 16,455
+thread 6셀트리온is finished.
+ : 664,973
+ : 270,500
+thread 0코스피 지수is finished.
+ : 387,756
+ : 2,458.53
+thread 1코스닥 지수is finished.
+ : 962,183
+ : 868.58
+thread 5KODEX 인버스is finished.
+ : 4,720,699
+ : 6,145
+thread 2삼성전자is finished.
+ : 5,361,016
+ : 49,550
+thread 4KODEX 레버리지is finished.
+ : 4,630,145
+ : 16,465
+thread 0코스피 지수is finished.
+ : 387,756
+ : 2,458.53
+thread 1코스닥 지수is finished.
+ : 962,183
+ : 868.58
+thread 4KODEX 레버리지is finished.
+ : 4,630,145
+ : 16,465
+thread 5KODEX 인버스is finished.
+ : 4,720,699
+ : 6,145
+thread 2삼성전자is finished.
+ : 5,361,016
+ : 49,550
+thread 6셀트리온is finished.
+ : 666,591
+ : 270,500
+thread 3삼성바이오로직스is finished.
+ : 599,702
+ : 410,500
+thread 0코스피 지수is finished.
+ : 389,075
+ : 2,459.10
+thread 1코스닥 지수is finished.
+ : 964,384
+ : 868.66
+thread 3삼성바이오로직스is finished.
+ : 600,177
+ : 410,500
+thread 4KODEX 레버리지is finished.
+ : 4,638,758
+ : 16,470
+thread 5KODEX 인버스is finished.
+ : 4,722,178
+ : 6,145
+thread 2삼성전자is finished.
+ : 5,381,377
+ : 49,600
+thread 6셀트리온is finished.
+ : 666,922
+ : 270,500
+thread 1코스닥 지수is finished.
+ : 1,006,747
+ : 869.31
+thread 0코스피 지수is finished.
+ : 411,530
+ : 2,460.54
+thread 4KODEX 레버리지is finished.
+ : 4,991,053
+ : 16,485
+thread 5KODEX 인버스is finished.
+ : 4,917,420
+ : 6,140
+thread 6셀트리온is finished.
+ : 698,791
+ : 269,500
+thread 3삼성바이오로직스is finished.
+ : 618,123
+ : 407,500
+thread 2삼성전자is finished.
+ : 5,748,434
+ : 49,650
+thread 1코스닥 지수is finished.
+ : 1,011,395
+ : 869.20
+thread 0코스피 지수is finished.
+ : 413,718
+ : 2,460.67
+thread 6셀트리온is finished.
+ : 701,404
+ : 269,500
+thread 2삼성전자is finished.
+ : 5,748,434
+ : 49,650
+thread 3삼성바이오로직스is finished.
+ : 618,123
+ : 407,500
+thread 4KODEX 레버리지is finished.
+ : 4,997,668
+ : 16,485
+thread 5KODEX 인버스is finished.
+ : 4,926,230
+ : 6,135
+thread 1코스닥 지수is finished.
+ : 1,011,395
+ : 869.20
+thread 0코스피 지수is finished.
+ : 413,718
+ : 2,460.67
+thread 6셀트리온is finished.
+ : 701,404
+ : 269,500
+thread 3삼성바이오로직스is finished.
+ : 621,597
+ : 407,000
+thread 2삼성전자is finished.
+ : 5,761,446
+ : 49,650
+thread 5KODEX 인버스is finished.
+ : 4,926,230
+ : 6,135
+thread 4KODEX 레버리지is finished.
+ : 4,997,668
+ : 16,485
+thread 1코스닥 지수is finished.
+ : 1,012,450
+ : 869.30
+thread 0코스피 지수is finished.
+ : 414,068
+ : 2,460.78
+thread 5KODEX 인버스is finished.
+ : 4,971,584
+ : 6,140
+thread 4KODEX 레버리지is finished.
+ : 5,046,107
+ : 16,470
+thread 6셀트리온is finished.
+ : 702,937
+ : 270,000
+thread 2삼성전자is finished.
+ : 5,761,446
+ : 49,650
+thread 3삼성바이오로직스is finished.
+ : 621,597
+ : 407,000
+thread 1코스닥 지수is finished.
+ : 1,012,450
+ : 869.30
+thread 5KODEX 인버스is finished.
+ : 4,971,584
+ : 6,140
+thread 0코스피 지수is finished.
+ : 414,068
+ : 2,460.78
+thread 4KODEX 레버리지is finished.
+ : 5,046,107
+ : 16,470
+thread 6셀트리온is finished.
+ : 702,937
+ : 270,000
+thread 3삼성바이오로직스is finished.
+ : 621,597
+ : 407,000
+thread 2삼성전자is finished.
+ : 5,761,446
+ : 49,650

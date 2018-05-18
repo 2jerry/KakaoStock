@@ -57,19 +57,25 @@
     <ClCompile Include="소스.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="alignWidget.cpp">
+      <Filter>UI Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="Stock.h">
       <Filter>Header Files</Filter>
-    </QtMoc>
-    <QtMoc Include="mainwindow.h">
-      <Filter>UI Header Files</Filter>
     </QtMoc>
     <QtMoc Include="addwidget.h">
       <Filter>UI Header Files</Filter>
     </QtMoc>
     <QtMoc Include="dataload.h">
       <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="alignWidget.h">
+      <Filter>UI Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="mainwindow.h">
+      <Filter>UI Header Files</Filter>
     </QtMoc>
   </ItemGroup>
   <ItemGroup>

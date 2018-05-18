@@ -111,6 +111,15 @@ void stockInfo::stockSetup(QGroupBox *stock, QString txtcolor, int cnt)
 	font.setBold(true);
 	font.setWeight(75);
 
+
+	frame = new QFrame(stock);
+	frame->setGeometry(QRect(150, 7, 80, 20));
+	frame->setFrameShape(QFrame::WinPanel);
+	frame->setFrameShadow(QFrame::Plain);
+	//frame->setLineWidth(11);
+	frame->setVisible(false);
+	frame->setStyleSheet(txtcolor);
+
 	currentPrice = new QLabel(stock);
 	currentPrice->setGeometry(QRect(150, 7, 80, 20));
 	currentPrice->setFont(font);

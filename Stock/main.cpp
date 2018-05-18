@@ -9,8 +9,13 @@ int main(int argc, char *argv[])
 	w.set_window();
 	w.show();
 	int cnt = 0;
-	/*for (int i = 0; i < 7; i++)
-		w.dataThread[i]->start();*/
+	//for (int i = 0; i < 7; i++)
+	//{
+	//	w.dataThread[i]->start();
+	//	w.dataThread[i]->idx = i;
+	//	//w.info[i].frame->setVisible(false);
+	//}
+	
 	//while (cnt < 100)
 	//{
 

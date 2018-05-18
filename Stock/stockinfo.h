@@ -22,6 +22,7 @@
 #include <QtWidgets/QTabWidget>
 #include <QtWidgets/QWidget>
 #include <QSignalMapper>
+#include <QtWidgets\qframe.h>
 
 class stockInfo 
 {
@@ -39,6 +40,7 @@ public:
 	QLabel *exchangeRate;           // 등락률
 	QCommandLinkButton *stockName; // 주식이름
 	QString *txtColor;
+	QFrame *frame;
 
 };
 

@@ -67,8 +67,6 @@ void MainWindow::set_window()
 		//info[i].stock->setStyleSheet("border: none");
 		
 	}
-	height = info[0].tradingVol->height();
-	width = info[0].tradingVol->width();
 	// 주식 정보 출력
 	int chk = -1;
 	ifstream ifs;
@@ -78,28 +76,29 @@ void MainWindow::set_window()
 		qkor("코스닥"),qkor("삼성바이오"),
 		qkor("KODEX 레버리지"),qkor("KODEX 인버스"),qkor("셀트리온") };
 
-	for (int i = 0; i < 7; i++)
-	{
-		//info[i].setTxt(saveName[i]); // 주식 정보 불러오기
-
-
-		//info[i].stockName->setText(saveName[i]);
-
-	}
-
 }
 
 /* --- event function --- */
 void MainWindow::on_bnt_clicked(int i)
 {
-	if (i == 1)
+	switch (i)
 	{
+	case 1:
 		// 새로운 창 띄우기
 		add.setUpWidget();
 		//  add.cnt = 0;
-
-
+		break;
+	case 2:
+		align.setUpWidget();
+		break;
+	case 3:
+		break;
+	default:
+		break;
 	}
+	
+		
+
 
 	cnt++;
 	//info[cnt/3].stockName->setText(add.saveName[0]);
@@ -116,29 +115,16 @@ void MainWindow::on_thread_finish(const int _idx)
 	font.setPointSize(11);
 	font.setBold(false);
 
+
 	
-
-
-	ofs << "thread " <<_idx<<" "<< dataThread[_idx]->htmlLoadName << "is finished.\n";
-
-	//if (dataThread[_idx]->htmlLoadName == "코스피 지수" || dataThread[_idx]->htmlLoadName == "코스닥 지수")
-	//	dataThread[_idx]->KOSPI_KOSDAQ_Parser(dataThread[_idx]->htmlLoadName);
-	//else
-	//	dataThread[_idx]->stock_Parser(dataThread[_idx]->htmlLoadName);
-	/*info[_idx].tradingVol->setText("");
-	info[_idx].yesterdayPrice->setText("");
-	info[_idx].currentPrice->setText("");
-	info[_idx].exchangeRate->setText("");*/
-	x = info[_idx].tradingVol->x();
-	y = info[_idx].tradingVol->y();
 	if (dataThread[_idx]->isFinished() == false)
 		return;
 	if (dataThread[_idx]->isRunning() == true)
 		return;
 	if (tmp_trade[_idx] != dataThread[_idx]->info["거래량"] || tmp_cur[_idx] != dataThread[_idx]->info["현재가"])
 	{
-		
-		
+		ofs << "thread " << _idx <<dataThread[_idx]->htmlLoadName << "is finished.\n";
+
 		ofs << tmp_trade[_idx] << " : " << dataThread[_idx]->info["거래량"] << "\n";
 		ofs << tmp_cur[_idx] << " : " << dataThread[_idx]->info["현재가"] << "\n";
 		if (dataThread[_idx]->flag < 0)
@@ -146,52 +132,55 @@ void MainWindow::on_thread_finish(const int _idx)
 			info[_idx].currentPrice->setStyleSheet("color:rgb(000,102,255)");
 			info[_idx].yesterdayPrice->setStyleSheet("color:rgb(000,102,255)");
 			info[_idx].exchangeRate->setStyleSheet("color:rgb(000,102,255)");
+			info[_idx].frame->setStyleSheet("color:rgb(000,102,255)");
+		}
+		else if (dataThread[_idx]->flag == 0)
+		{
+			info[_idx].currentPrice->setStyleSheet("color:rgb(000,000,000)");
+			info[_idx].yesterdayPrice->setStyleSheet("color:rgb(000,000,000)");
+			info[_idx].exchangeRate->setStyleSheet("color:rgb(000,000,000)");
 		}
 		info[_idx].stockName->setText(qstr(dataThread[_idx]->htmlLoadName));
 		info[_idx].tradingVol->setText(qstr(dataThread[_idx]->info["거래량"]));
 		info[_idx].yesterdayPrice->setText(qstr(dataThread[_idx]->info["전일비"]));
 		info[_idx].currentPrice->setText(qstr(dataThread[_idx]->info["현재가"]));
 		info[_idx].exchangeRate->setText(qstr(dataThread[_idx]->info["등락률"]));
+		
+		tmp_trade[_idx] = dataThread[_idx]->info["거래량"];
+		tmp_cur[_idx] = dataThread[_idx]->info["현재가"];
+
+		info[_idx].frame->setVisible(true);
+		//y = info[_idx].currentPrice->y() + _idx * 51;
+		//this->update();
+		
 	}
 	else
 	{
 		return;
 	}
 
-	tmp_trade[_idx] = dataThread[_idx]->info["거래량"];
-	tmp_cur[_idx] = dataThread[_idx]->info["현재가"];
-	/* 쓰레드로 불러온 주식 */
-
 	info[_idx].stockName->setFont(font);
-
-
-
-	/*	for (auto j = dataThread[_idx]->info.begin(); j != dataThread[_idx]->info.end(); ++j)
-		{
-
-
-			ofs << j->first << " : " << j->second << "\n";
-		}*/
-
 	ofs.close();
-	this->update();
+
 }
 
 void MainWindow::on_timer_count()
 {
-
 	for (int i = 0; i < 7; i++)
 	{
+	/*	std::string n = stockName[i] + ".html";
+		std::remove(n.c_str());
+
+	*/
+		if (align.m == 1)
+		{
+
+		}
+		info[i].frame->setVisible(false);
 		dataThread[i]->start(); // 쓰레드 시작
 		dataThread[i]->idx = i;
+		
 	}
 
 }
 
-void MainWindow::paintEvent(QPaintEvent *event)
-{
-	Q_UNUSED(event);
-	QPainter paint(this);
-	//paint.drawRect(x, y, width, height);
-	paint.end();
-}
